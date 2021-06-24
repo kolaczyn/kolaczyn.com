@@ -1,5 +1,5 @@
 <template>
-  <component :is="renderAs" class="text-4xl">
+  <component :is="renderAs" class="text-4xl font-bold">
     <slot />
   </component>
 </template>
