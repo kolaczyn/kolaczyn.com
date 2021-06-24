@@ -2,12 +2,22 @@
   <div>
     <HomeHero />
     <HomeSkills />
-    <HomeProjects />
+    <!-- <HomeProjects /> -->
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  head () {
+    return {
+      title: 'Paweł Kołaczyński | Portfolio'
+    }
+  }
+}
 </script>
 
-<style></style>
+<style scoped>
+h1 > span {
+  background-color: red;
+  background-size: 100% 0.2em;
+}</style>

@@ -1,19 +1,37 @@
 <template>
-  <LayoutSkills>
-    <template #header>
-      Hello world
-    </template>
-    <ul>
-      <li>lorem</li>
-      <li>ipsum dolor</li>
-      <li>lorem</li>
-      <li>lorem</li>
-    </ul>
-  </LayoutSkills>
+  <LayoutContainer class="py-20 space-y-8">
+    <LayoutSkills
+      v-for="({title, subtitle,bulletPoints, imgUrl}, skillIdx) in [frontendSkills, backendSkills, hobbies]"
+      :key="title"
+      :reverse="skillIdx %2=== 1"
+      :img-url="imgUrl"
+    >
+      <template :id="skillIdx ===0 ? 'skills' : null" #header>
+        {{ title }}
+      </template>
+      <p class="my-3 opacity-75">
+        {{ subtitle }}
+      </p>
+      <ul class="list-inside list-disc">
+        <li v-for="(bulletPoint, bulletIdx) in bulletPoints" :key="bulletIdx">
+          {{ bulletPoint }}
+        </li>
+      </ul>
+    </LayoutSkills>
+  </layoutcontainer>
 </template>
 
 <script>
-export default {}
+import backendSkills from '../../fixtures/backendSkills'
+import frontendSkills from '../../fixtures/frontendSkills'
+import hobbies from '../../fixtures/hobbies'
+export default {
+  data () {
+    return {
+      backendSkills, frontendSkills, hobbies
+    }
+  }
+}
 </script>
 
 <style>

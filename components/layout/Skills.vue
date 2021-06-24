@@ -1,14 +1,16 @@
 <template>
-  <section class="grid grid-cols-2">
-    <div>
+  <section :class="['flex items-center', reverse ? 'flex-row-reverse': '']">
+    <div class="flex-1">
       <header>
-        <h2>
+        <BaseHeader>
           <slot name="header" />
-        </h2>
+        </BaseHeader>
       </header>
       <slot />
     </div>
-    <img :src="imgUrl">
+    <div class="flex-1">
+      <img class="self-center transform mx-auto" :src="require(`~/assets/${imgUrl}`)">
+    </div>
   </section>
 </template>
 
@@ -18,6 +20,11 @@ export default {
     imgUrl: {
       required: true,
       type: String
+    },
+    reverse: {
+      required: false,
+      default: false,
+      type: Boolean
     }
   }
 }
