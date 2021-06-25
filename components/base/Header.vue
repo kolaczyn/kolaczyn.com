@@ -1,6 +1,8 @@
 <template>
   <component :is="renderAs" class="text-4xl font-bold">
-    <slot />
+    <BaseUnderlined>
+      <slot />
+    </BaseUnderlined>
   </component>
 </template>
 

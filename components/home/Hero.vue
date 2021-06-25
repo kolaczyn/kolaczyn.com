@@ -14,7 +14,7 @@
           </BaseHeader>
           <section class="my-5">
             <p>
-              I've been studying web development since the July of 2020. I've learned a ton in the last year.
+              I've been studying web development since the July of 2020. I've learned a lot in the last year.
             </p>
             <p>
               Curretly, I'm looking for my first job in the industry.
