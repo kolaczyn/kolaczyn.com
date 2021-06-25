@@ -1,61 +1,39 @@
 <template>
   <LayoutWavedSection>
-    <LayoutContainer>
+    <LayoutContainerBig>
       <BaseHeader id="projects" class="text-center">
         My Projects
       </BaseHeader>
-      <section>
-        <span>All</span>
-        <span>React</span>
-        <span>Vue</span>
-        <span>Full Stack</span>
+      <section class="my-4 flex justify-around">
+        <button v-for="label in ['All', 'React', 'Vue', 'Full Stack']" :key="label" @click="setCurrentCategory(label)">
+          {{ label }}
+        </button>
       </section>
-      <section class="grid grid-cols-3 grid-rows-3 gap-4">
+      <section class="grid grid-cols-3 gap-6">
         <ProjectCard
           v-for="project in projects"
           :key="project.name"
           :project="project"
+          :current-category="currentCategory"
         />
       </section>
-    </LayoutContainer>
+    </LayoutContainerBig>
   </LayoutWavedSection>
-
-  <!-- <LayoutWavedSection>
-    <LayoutContainer id="projects" class="space-y-8 flex justify-center">
-      <div>
-        <BaseHeader>
-          My Projects
-        </BaseHeader>
-        <p class="my-3 opacity-75">
-          Click to see the project
-        </p>
-        <ul
-          class="list-inside list-disc"
-        >
-          <li
-            v-for="({name, url}) in projects"
-            :key="name"
-          >
-            <a class="text-ink-300" :href="url" target="_blank">
-              {{ name }}
-            </a>
-          </li>
-        </ul>
-      </div>
-    </LayoutContainer>
-  </LayoutWavedSection> -->
 </template>
 
 <script>
 import projects from '../../fixtures/projects'
 export default {
-  // provide: {
-  //   activeCategory: this.activeCategory
-  // },
   data () {
     return {
       projects,
-      activeCategory: 'all'
+      // activeCategory: 'all',
+      currentCategory: 'All'
+    }
+  },
+  methods: {
+    setCurrentCategory (category) {
+      this.currentCategory = category
     }
   }
 }

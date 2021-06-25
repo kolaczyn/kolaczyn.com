@@ -1,5 +1,5 @@
 <template>
-  <a :href="project.url" class="rounded-lg shadow-lg overflow-hidden" target="_blank">
+  <a :href="project.url" :class="['rounded-lg shadow-lg overflow-hidden ring-opacity-100 transition duration-500 ease-in', inCategory ? 'ring-8 ring-bright-sun-600' : '']" target="_blank">
     <div class="relative">
       <img
         :src="require(`~/assets/img/project/${project.slug}.png`)"
@@ -10,7 +10,6 @@
         </h3>
       </div>
     </div>
-    <!-- <span v-for="category in project.categories" :key="category">{{ category }}</span> -->
   </a>
 </template>
 
@@ -20,6 +19,18 @@ export default {
     project: {
       required: true,
       type: Object
+    },
+    currentCategory: {
+      required: true,
+      type: String
+    }
+  },
+  computed: {
+    isSelected () {
+      return this.currentCategory === 'All' || this.inCategory()
+    },
+    inCategory () {
+      return this.project.categories.includes(this.currentCategory)
     }
   }
 }

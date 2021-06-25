@@ -3,13 +3,13 @@ export default [
     name: 'Track Fit',
     slug: 'track-fit',
     url: 'https://track-fit.me',
-    categories: ['vue']
+    categories: ['React']
   },
   {
     name: 'Tech Blog',
     slug: 'tech-blog',
     url: 'https://tech-blog.kolaczyn.com',
-    categories: ['react']
+    categories: ['React']
   },
   {
     name: 'Typing Test',
@@ -21,31 +21,31 @@ export default [
     name: 'Reddit Clone',
     slug: 'reddit',
     url: 'https://reddit.kolaczyn.com',
-    categories: ['vue']
+    categories: ['Vue']
   },
   {
     name: '4chan Clone',
     slug: '4chan',
     url: 'https://4chan.kolaczyn.com',
-    categories: ['react', 'fullstack']
+    categories: ['React', 'Full Stack']
   },
   {
     name: 'Learn Japanese',
     slug: 'learn-japanese',
     url: 'https://learn-japanese.kolaczyn.com',
-    categories: ['vue']
+    categories: ['Vue']
   }
   // {
   //   name: 'Link Shortener',
   //   slug: 'link-shortener',
   //   url: 'https://link-shortener.kolaczyn.com',
-  //   categories: ['vue', 'fullstack']
+  //   categories: ['Vue', 'Full Stack']
   // },
   // {
   //   name: 'My Portfolio',
   //  slug: TODO fill this
   //   url: 'https://kolaczyn.com',
-  //   categories: ['vue']
+  //   categories: ['Vue']
   // },
   // {
   //   name: 'Chess',
