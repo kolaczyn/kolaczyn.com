@@ -1,5 +1,5 @@
 <template>
-  <component :is="renderAs" class="text-4xl font-bold">
+  <component :is="renderAs" :class="[textSize,'font-bold']">
     <BaseUnderlined>
       <slot />
     </BaseUnderlined>
@@ -13,6 +13,11 @@ export default {
       type: String,
       required: false,
       default: 'h2'
+    },
+    textSize: {
+      type: String,
+      required: false,
+      default: 'text-4xl'
     }
   }
 }

@@ -10,7 +10,7 @@
 export default {
   head () {
     return {
-      title: 'Paweł Kołaczyński | Portfolio'
+      title: 'Paweł Kołaczyński'
     }
   }
 }
