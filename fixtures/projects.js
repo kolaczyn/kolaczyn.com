@@ -45,3 +45,42 @@ export default [
     categories: []
   }
 ]
+
+// export const slugToUrl =  [
+//   {
+//      'Track Fit':
+//      'https://track-fit.me',
+//   },
+//   {
+//      'Tech Blog':
+//      'https://tech-blog.kolaczyn.com',
+//   },
+//   {
+//      'Learn Japanese':
+//      'https://learn-japanese.kolaczyn.com',
+//   },
+//   {
+//      'Typing Test':
+//      'https://typing-test.kolaczyn.com',
+//   },
+//   {
+//      'Reddit Clone':
+//      'https://reddit.kolaczyn.com',
+//   },
+//   {
+//      '4chan Clone':
+//      'https://4chan.kolaczyn.com',
+//   },
+//   {
+//      'Link Shortener':
+//      'https://link-shortener.kolaczyn.com',
+//   },
+//   {
+//      'My Portfolio':
+//      'https://kolaczyn.com',
+//   },
+//   {
+//      'Chess'
+//      'https://chess.kolaczyn.com',
+//   }
+// ]

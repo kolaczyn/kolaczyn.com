@@ -1,12 +1,12 @@
 <template>
-  <LayoutContainer class="py-20 space-y-8">
+  <LayoutContainer id="skills" class="py-20 space-y-8">
     <LayoutSkills
       v-for="({title, subtitle,bulletPoints, imgUrl}, skillIdx) in [frontendSkills, backendSkills, hobbies]"
       :key="title"
       :reverse="skillIdx %2=== 1"
       :img-url="imgUrl"
     >
-      <template :id="skillIdx ===0 ? 'skills' : null" #header>
+      <template #header>
         {{ title }}
       </template>
       <p class="my-3 opacity-75">

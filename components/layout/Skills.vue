@@ -8,7 +8,7 @@
       </header>
       <slot />
     </div>
-    <div class="flex-1">
+    <div class="flex-1 hidden md:inline">
       <img class="self-center transform mx-auto" :src="require(`~/assets/${imgUrl}`)">
     </div>
   </section>

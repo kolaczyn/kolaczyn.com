@@ -6,6 +6,9 @@
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap");
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Lato", sans-serif;
   @apply text-ink;
