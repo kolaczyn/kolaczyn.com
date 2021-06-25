@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-col justify-between h-full">
-    <div class="flex flex-col p-8">
+    <div class="flex flex-col p-6">
       <header class="flex items-center justify-between">
         <BaseHeader as="h1">
           {{ project.name }}
         </BaseHeader>
         <span>{{ projectIdx + 1 }} of {{ numberOfProjects }}</span>
       </header>
-      <p class="my-12">
+      <p class="my-10">
         {{
           project.about
         }}
@@ -23,13 +23,13 @@
       <BaseHeader text-size="text-3xl" as="h3">
         Post Mortem
       </BaseHeader>
-      <p class="my-12">
+      <p class="my-10">
         {{
           project.postMortem
         }}
       </p>
     </div>
-    <footer class="flex justify-between p-8 bg-gray-200">
+    <footer class="flex justify-between p-6 bg-gray-200">
       <NuxtLink :to="'/project/' + previousUrl">
         Previous
       </NuxtLink>
