@@ -10,11 +10,6 @@ export default [
     categories: ['react']
   },
   {
-    name: 'Learn Japanese',
-    url: 'https://learn-japanese.kolaczyn.com',
-    categories: ['vue']
-  },
-  {
     name: 'Typing Test',
     url: 'https://typing-test.kolaczyn.com',
     categories: ['React']
@@ -28,6 +23,11 @@ export default [
     name: '4chan Clone',
     url: 'https://4chan.kolaczyn.com',
     categories: ['react', 'fullstack']
+  },
+  {
+    name: 'Learn Japanese',
+    url: 'https://learn-japanese.kolaczyn.com',
+    categories: ['vue']
   }
   // {
   //   name: 'Link Shortener',

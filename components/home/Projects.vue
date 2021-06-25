@@ -21,7 +21,7 @@
   </LayoutWavedSection> -->
 
   <LayoutWavedSection>
-    <LayoutContainer id="projects" class="py-20 space-y-8 flex align-middle">
+    <LayoutContainer id="projects" class="space-y-8 flex justify-center">
       <div>
         <BaseHeader>
           My Projects
