@@ -8,21 +8,25 @@
         <span>{{ projectIdx + 1 }} of {{ numberOfProjects }}</span>
       </header>
       <p class="my-12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, blanditiis adipisci! Rerum omnis animi explicabo blanditiis perferendis nam, facere sint.
+        {{
+          project.about
+        }}
       </p>
       <BaseHeader text-size="text-3xl" class="self-end" as="h2">
         Tech Stack
       </BaseHeader>
       <ul class="my-6 list-inside list-disc">
-        <li v-for="lorem in ['lorem', 'ipsum', 'dolor', 'sit']" :key="lorem">
-          {{ lorem }}
+        <li v-for="tech in project.techStack" :key="tech">
+          {{ tech }}
         </li>
       </ul>
       <BaseHeader text-size="text-3xl" as="h3">
         Post Mortem
       </BaseHeader>
       <p class="my-12">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi animi praesentium earum!
+        {{
+          project.postMortem
+        }}
       </p>
     </div>
     <footer class="flex justify-between p-8 bg-gray-200">
