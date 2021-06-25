@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col justify-between h-full">
-    <div class="flex flex-col">
-      <header class="flex justify-between">
+    <div class="flex flex-col p-8">
+      <header class="flex items-center justify-between">
         <BaseHeader as="h1">
           {{ project.name }}
         </BaseHeader>
@@ -25,11 +25,11 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi animi praesentium earum!
       </p>
     </div>
-    <footer class="flex justify-between">
+    <footer class="flex justify-between p-8 bg-gray-200">
       <NuxtLink :to="'/project/' + previousUrl">
         Previous
       </NuxtLink>
-      <NuxtLink to="/#project">
+      <NuxtLink to="/#projects">
         Return
       </NuxtLink>
       <NuxtLink :to="'/project/' + nextUrl">

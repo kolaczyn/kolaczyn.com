@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :class="['rounded-lg shadow-lg overflow-hidden ring-opacity-100 transition duration-500 ease-in', inCategory ? 'ring-8 ring-bright-sun-600' : '']"
+    :class="['rounded-lg shadow-lg overflow-hidden ring-opacity-100 transition duration-500 ease-in', inCategory ? 'ring-8 ring-denim-200' : '']"
     :to="`/project/${project.slug}`"
   >
     <div class="relative">

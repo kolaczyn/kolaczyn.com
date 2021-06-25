@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen grid grid-cols-12">
-    <section class="col-span-3 p-8 border-r-2 border-denim-100">
+    <section class="col-span-3 border-r-2 border-denim-100">
       <ProjectDescription
         :project="project"
       />

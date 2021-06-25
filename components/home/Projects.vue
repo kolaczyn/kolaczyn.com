@@ -1,10 +1,10 @@
 <template>
   <LayoutWavedSection id="projects">
     <LayoutContainerBig>
-      <BaseHeader id="projects" class="text-center">
+      <BaseHeader id="projects" class="transform -translate-y-24 text-center">
         My Projects
       </BaseHeader>
-      <section class="my-4 flex justify-around">
+      <section class="transform max-w-md mx-auto -translate-y-12 flex justify-around">
         <button v-for="label in categories" :key="label" @click="setCurrentCategory(label)">
           {{ label }}
         </button>
@@ -35,7 +35,8 @@ export default {
   methods: {
     setCurrentCategory (category) {
       this.currentCategory = category
-    }
+    },
+    isActive: label => label === this.currentCategory
   }
 }
 </script>
