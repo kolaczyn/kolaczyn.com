@@ -29,16 +29,16 @@
         }}
       </p>
     </div>
-    <footer class="flex justify-between p-6 bg-gray-200">
-      <NuxtLink :to="'/project/' + previousUrl">
+    <footer class="flex justify-between bg-bright-sun-200">
+      <ProjectNavigation :to="'/project/' + previousUrl">
         Previous
-      </NuxtLink>
-      <NuxtLink to="/#projects">
+      </ProjectNavigation>
+      <ProjectNavigation to="/#projects">
         Return
-      </NuxtLink>
-      <NuxtLink :to="'/project/' + nextUrl">
+      </ProjectNavigation>
+      <ProjectNavigation :to="'/project/' + nextUrl">
         Next
-      </NuxtLink>
+      </ProjectNavigation>
     </footer>
   </div>
 </template>
