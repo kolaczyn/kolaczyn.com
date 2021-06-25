@@ -1,5 +1,5 @@
 <template>
-  <!-- <LayoutWavedSection>
+  <LayoutWavedSection>
     <LayoutContainer>
       <BaseHeader id="projects" class="text-center">
         My Projects
@@ -18,9 +18,9 @@
         />
       </section>
     </LayoutContainer>
-  </LayoutWavedSection> -->
+  </LayoutWavedSection>
 
-  <LayoutWavedSection>
+  <!-- <LayoutWavedSection>
     <LayoutContainer id="projects" class="space-y-8 flex justify-center">
       <div>
         <BaseHeader>
@@ -43,7 +43,7 @@
         </ul>
       </div>
     </LayoutContainer>
-  </LayoutWavedSection>
+  </LayoutWavedSection> -->
 </template>
 
 <script>
