@@ -1,8 +1,11 @@
 <template>
-  <a :href="project.url" :class="['rounded-lg shadow-lg overflow-hidden ring-opacity-100 transition duration-500 ease-in', inCategory ? 'ring-8 ring-bright-sun-600' : '']" target="_blank">
+  <NuxtLink
+    :class="['rounded-lg shadow-lg overflow-hidden ring-opacity-100 transition duration-500 ease-in', inCategory ? 'ring-8 ring-bright-sun-600' : '']"
+    :to="`/project/${project.slug}`"
+  >
     <div class="relative">
       <img
-        :src="require(`~/assets/img/project/${project.slug}.png`)"
+        :src="require(`~/assets/img/project/${project.imgName}`)"
       >
       <div class="absolute left-0 top-0 z-10 w-full h-full bg-gradient-to-b from-transparent via-transparent to-black">
         <h3 class="absolute text-white bottom-0 m-2 z-20">
@@ -10,6 +13,7 @@
         </h3>
       </div>
     </div>
+  </NuxtLink>
   </a>
 </template>
 

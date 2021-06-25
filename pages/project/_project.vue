@@ -1,18 +1,28 @@
 <template>
   <div class="min-h-screen grid grid-cols-12">
-    <section class="col-span-3">
-      Hello world
+    <section class="col-span-3 p-8">
+      <BaseHeader>{{ project.name }}</BaseHeader>
+      <NuxtLink to="/#projects">
+        Return
+      </NuxtLink>
     </section>
     <div class="col-span-9">
-      <!-- <iframe class="w-full h-full" src="https://track-fit.me" /> -->
-      <iframe class="w-full h-full" src="http://localhost:3000/project/lol" />
+      <iframe class="w-full h-full" :src="project.url" />
+      <!-- <iframe class="w-full h-full" src="http://localhost:3000/project/lol" /> -->
     </div>
   </div>
 </template>
 
 <script>
+import projects from '../../fixtures/projects'
 export default {
 
+  computed: {
+    project () {
+      const { project } = this.$route.params
+      return { ...projects.byId[project] }
+    }
+  }
 }
 </script>
 

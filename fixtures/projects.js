@@ -1,95 +1,50 @@
-export default [
+export const categories = ['All', 'React', 'Vue', 'Full Stack']
+
+const projects = {
+  byId: {
+    'track-fit':
   {
     name: 'Track Fit',
-    slug: 'track-fit',
     url: 'https://track-fit.me',
-    categories: ['React']
+    categories: ['React'],
+    imgName: 'track-fit.png'
   },
+    'tech-blog':
   {
     name: 'Tech Blog',
-    slug: 'tech-blog',
     url: 'https://tech-blog.kolaczyn.com',
-    categories: ['React']
+    categories: ['React'],
+    imgName: 'tech-blog.png'
   },
+    'typing-test':
   {
     name: 'Typing Test',
-    slug: 'typing-test',
     url: 'https://typing-test.kolaczyn.com',
-    categories: ['React']
+    categories: ['React'],
+    imgName: 'typing-test.png'
   },
+    reddit:
   {
     name: 'Reddit Clone',
-    slug: 'reddit',
     url: 'https://reddit.kolaczyn.com',
-    categories: ['Vue']
+    categories: ['Vue'],
+    imgName: 'reddit.png'
   },
+    '4chan':
   {
     name: '4chan Clone',
-    slug: '4chan',
     url: 'https://4chan.kolaczyn.com',
-    categories: ['React', 'Full Stack']
+    categories: ['React', 'Full Stack'],
+    imgName: '4chan.png'
   },
+    'learn-japanese':
   {
     name: 'Learn Japanese',
-    slug: 'learn-japanese',
     url: 'https://learn-japanese.kolaczyn.com',
-    categories: ['Vue']
+    categories: ['Vue'],
+    imgName: 'learn-japanese.png'
   }
-  // {
-  //   name: 'Link Shortener',
-  //   slug: 'link-shortener',
-  //   url: 'https://link-shortener.kolaczyn.com',
-  //   categories: ['Vue', 'Full Stack']
-  // },
-  // {
-  //   name: 'My Portfolio',
-  //  slug: TODO fill this
-  //   url: 'https://kolaczyn.com',
-  //   categories: ['Vue']
-  // },
-  // {
-  //   name: 'Chess',
-  // slug: 'chess',
-  //   url: 'https://chess.kolaczyn.com',
-  //   categories: []
-  // }
-]
-
-// export const slugToUrl =  [
-//   {
-//      'Track Fit':
-//      'https://track-fit.me',
-//   },
-//   {
-//      'Tech Blog':
-//      'https://tech-blog.kolaczyn.com',
-//   },
-//   {
-//      'Learn Japanese':
-//      'https://learn-japanese.kolaczyn.com',
-//   },
-//   {
-//      'Typing Test':
-//      'https://typing-test.kolaczyn.com',
-//   },
-//   {
-//      'Reddit Clone':
-//      'https://reddit.kolaczyn.com',
-//   },
-//   {
-//      '4chan Clone':
-//      'https://4chan.kolaczyn.com',
-//   },
-//   {
-//      'Link Shortener':
-//      'https://link-shortener.kolaczyn.com',
-//   },
-//   {
-//      'My Portfolio':
-//      'https://kolaczyn.com',
-//   },
-//   {
-//      'Chess'
-//      'https://chess.kolaczyn.com',
-//   }
-// ]
+  },
+  allIds: ['track-fit', 'tech-blog', 'typing-test', 'reddit', '4chan', 'learn-japanese']
+}
+export default projects
