@@ -1,24 +1,26 @@
 <template>
-  <LayoutContainer id="skills" class="py-20 space-y-8">
-    <LayoutSkills
-      v-for="({title, subtitle,bulletPoints, imgUrl}, skillIdx) in [frontendSkills, backendSkills, hobbies]"
-      :key="title"
-      :reverse="skillIdx %2=== 1"
-      :img-url="imgUrl"
-    >
-      <template #header>
-        {{ title }}
-      </template>
-      <p class="my-3 opacity-75">
-        {{ subtitle }}
-      </p>
-      <ul class="list-inside list-disc">
-        <li v-for="(bulletPoint, bulletIdx) in bulletPoints" :key="bulletIdx">
-          {{ bulletPoint }}
-        </li>
-      </ul>
-    </LayoutSkills>
-  </layoutcontainer>
+  <div>
+    <LayoutContainer id="skills" class="py-20 space-y-8">
+      <LayoutSkills
+        v-for="({title, subtitle,bulletPoints, imgUrl}, skillIdx) in [frontendSkills, backendSkills, hobbies]"
+        :key="title"
+        :reverse="skillIdx %2=== 1"
+        :img-url="imgUrl"
+      >
+        <template #header>
+          {{ title }}
+        </template>
+        <p class="my-3 opacity-75">
+          {{ subtitle }}
+        </p>
+        <ul class="list-inside list-disc">
+          <li v-for="(bulletPoint, bulletIdx) in bulletPoints" :key="bulletIdx">
+            {{ bulletPoint }}
+          </li>
+        </ul>
+      </LayoutSkills>
+    </LayoutContainer>
+  </div>
 </template>
 
 <script>
@@ -28,7 +30,9 @@ import hobbies from '../../fixtures/hobbies'
 export default {
   data () {
     return {
-      backendSkills, frontendSkills, hobbies
+      backendSkills,
+      frontendSkills,
+      hobbies
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <LayoutWavedSection>
+  <!-- <LayoutWavedSection>
     <LayoutContainer>
       <BaseHeader id="projects" class="text-center">
         My Projects
@@ -17,6 +17,31 @@
           :project="project"
         />
       </section>
+    </LayoutContainer>
+  </LayoutWavedSection> -->
+
+  <LayoutWavedSection>
+    <LayoutContainer id="projects" class="py-20 space-y-8 flex align-middle">
+      <div>
+        <BaseHeader>
+          My Projects
+        </BaseHeader>
+        <p class="my-3 opacity-75">
+          Click to see the project
+        </p>
+        <ul
+          class="list-inside list-disc"
+        >
+          <li
+            v-for="({name, url}) in projects"
+            :key="name"
+          >
+            <a class="text-ink-300" :href="url" target="_blank">
+              {{ name }}
+            </a>
+          </li>
+        </ul>
+      </div>
     </LayoutContainer>
   </LayoutWavedSection>
 </template>

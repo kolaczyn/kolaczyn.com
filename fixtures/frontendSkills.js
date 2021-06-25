@@ -1,7 +1,7 @@
 export default {
   title: 'My Frontend Skills',
   subtitle:
-    "It's where I spend most of my time and feel the most comfortable writing come.",
+    "It's where I spend most of my time and feel the most comfortable writing code.",
   bulletPoints: [
     'Semantic HTML',
     'Modern CSS, SCSS, Tailwind, Chakra UI',
@@ -12,7 +12,7 @@ export default {
     'Vue, Vuex, Nuxt.js',
     'Figma, basic web design skills',
     'Jest, Testing Library',
-    'Consuming REST APi'
+    'Consuming REST API'
   ],
   imgUrl: 'front-end.svg'
 }

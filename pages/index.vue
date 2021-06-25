@@ -2,7 +2,7 @@
   <div>
     <HomeHero />
     <HomeSkills />
-    <!-- <HomeProjects /> -->
+    <HomeProjects />
   </div>
 </template>
 

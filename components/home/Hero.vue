@@ -14,18 +14,19 @@
           </BaseHeader>
           <section class="my-5">
             <p>
-              I've been studying web developmene since the July of 2020. I’ve
-              learned a ton last year.
+              I've been studying web development since the July of 2020. I've learned a ton in the last year.
             </p>
-            <p>Now I just want to get a job.</p>
+            <p>
+              Curretly, I'm looking for my first job in the industry.
+            </p>
           </section>
           <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
             <BaseButton href="#skills" primary>
               My Skills
             </BaseButton>
-            <!-- <BaseButton href="#projects">
+            <BaseButton href="#projects">
               My Projects
-            </BaseButton> -->
+            </BaseButton>
           </div>
         </section>
       </div>

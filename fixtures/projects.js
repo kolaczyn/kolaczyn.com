@@ -28,22 +28,22 @@ export default [
     name: '4chan Clone',
     url: 'https://4chan.kolaczyn.com',
     categories: ['react', 'fullstack']
-  },
-  {
-    name: 'Link Shortener',
-    url: 'https://link-shortener.kolaczyn.com',
-    categories: ['vue', 'fullstack']
-  },
-  {
-    name: 'My Portfolio',
-    url: 'https://kolaczyn.com',
-    categories: ['vue']
-  },
-  {
-    name: 'Chess',
-    url: 'https://chess.kolaczyn.com',
-    categories: []
   }
+  // {
+  //   name: 'Link Shortener',
+  //   url: 'https://link-shortener.kolaczyn.com',
+  //   categories: ['vue', 'fullstack']
+  // },
+  // {
+  //   name: 'My Portfolio',
+  //   url: 'https://kolaczyn.com',
+  //   categories: ['vue']
+  // },
+  // {
+  //   name: 'Chess',
+  //   url: 'https://chess.kolaczyn.com',
+  //   categories: []
+  // }
 ]
 
 // export const slugToUrl =  [
