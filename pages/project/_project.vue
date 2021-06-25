@@ -24,12 +24,8 @@ export default {
   computed: {
     project () {
       const { project } = this.$route.params
-      return { ...projects.byId[project] }
+      return { ...projects.byId[project], slug: project }
     }
   }
 }
 </script>
-
-<style>
-
-</style>
