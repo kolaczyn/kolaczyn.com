@@ -74,7 +74,7 @@ const projects = {
     url: 'https://4chan.kolaczyn.com',
     categories: ['React', 'Full Stack'],
     imgName: '4chan.png',
-    repo: 'https://github.com/kolaczyn/reddit-clone',
+    repo: 'https://github.com/kolaczyn/4chan-fullstack',
     techStack: [
       'React',
       'Bootstrap',
@@ -92,6 +92,7 @@ const projects = {
     url: 'https://learn-japanese.kolaczyn.com',
     categories: ['Vue'],
     imgName: 'learn-japanese.png',
+    repo: 'https://github.com/kolaczyn/learn-japanese',
     techStack: [
       'Vue'
     ],
@@ -104,6 +105,7 @@ const projects = {
     url: 'https://luke-smith.kolaczyn.com',
     categories: ['Vanilla'],
     imgName: 'luke-smith.png',
+    repo: 'https://github.com/kolaczyn/lukesmithxyz',
     techStack: [
       'Plain HTML',
       'Vanilla JS',
@@ -121,6 +123,7 @@ const projects = {
     url: 'https://chess.kolaczyn.com',
     categories: ['Vanilla'],
     imgName: 'chess.png',
+    repo: 'https://github.com/kolaczyn/chess-js',
     techStack: [
       'Plain HTML',
       'Vanilla JS',
@@ -136,6 +139,7 @@ const projects = {
     url: 'https://kolaczyn.com',
     categories: ['Vue'],
     imgName: 'portfolio.png',
+    repo: 'https://github.com/kolaczyn/portfolio-website',
     techStack: [
       'Vue',
       'iFrames to show my other websites'

@@ -8,10 +8,16 @@
           </BaseHeader>
           <span>{{ projectIdx + 1 }} of {{ numberOfProjects }}</span>
         </div>
-        <!-- <a target="_blank" class="text-xl text-denim-300 hover:text-denim-400 hover:underline transition duration-300" :href="project.url">{{ project.url }}</a> -->
-        <!-- <Icon name="camera" /> -->
+        <div class="flex justify-between">
+          <ProjectLink :url="project.url">
+            Visit Website
+          </ProjectLink>
+          <ProjectLink :url="project.repo">
+            Repository
+          </ProjectLink>
+        </div>
       </header>
-      <p class="my-10">
+      <p class="mt-6 my-10">
         {{
           project.about
         }}
@@ -35,13 +41,20 @@
     </div>
     <footer class="flex justify-between bg-bright-sun-200">
       <ProjectNavigation :to="'/project/' + previousUrl">
-        Previous
+        <fa icon="chevron-left" />
+        <span class="ml-2">
+          Previous
+        </span>
       </ProjectNavigation>
       <ProjectNavigation to="/#projects">
         Return
       </ProjectNavigation>
       <ProjectNavigation :to="'/project/' + nextUrl">
-        Next
+        <span class="mr-2">
+          Next
+        </span>
+        <fa icon="chevron-right" />
+        <!-- <font-awesome-icon :icon="['fab', 'linkedin']" /> -->
       </ProjectNavigation>
     </footer>
   </div>
