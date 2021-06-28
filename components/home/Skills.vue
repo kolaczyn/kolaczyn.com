@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LayoutContainer id="skills" class="pt-20 space-y-8">
+    <LayoutContainer id="skills" class="pt-20 space-y-8 mb-6 sm:mb-0">
       <LayoutSkills
         v-for="({title, subtitle,bulletPoints, imgUrl}, skillIdx) in [frontendSkills, backendSkills, hobbies]"
         :key="title"

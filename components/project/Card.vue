@@ -8,7 +8,7 @@
         :src="require(`~/assets/img/project/${project.imgName}`)"
       >
       <div class="absolute left-0 top-0 z-10 w-full h-full bg-gradient-to-b from-transparent via-transparent to-black">
-        <h3 class="absolute text-white bottom-0 m-2 z-20">
+        <h3 class="absolute text-white bottom-0 m-2 z-20 text-4xl text-center md:text-left md:text-3xl">
           {{ project.name }}
         </h3>
       </div>

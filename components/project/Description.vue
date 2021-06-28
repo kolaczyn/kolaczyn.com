@@ -54,7 +54,6 @@
           Next
         </span>
         <fa icon="chevron-right" />
-        <!-- <font-awesome-icon :icon="['fab', 'linkedin']" /> -->
       </ProjectNavigation>
     </footer>
   </div>

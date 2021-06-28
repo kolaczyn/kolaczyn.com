@@ -1,15 +1,15 @@
 <template>
   <LayoutWavedSection id="projects">
     <LayoutContainerBig>
-      <BaseHeader id="projects" class="transform -translate-y-24 text-center">
+      <BaseHeader id="projects" class="transform translate-y-0 sm:-translate-y-16 md:-translate-y-24 -mt-6 mb-8 text-center">
         My Projects
       </BaseHeader>
-      <section class="transform max-w-md mx-auto -translate-y-12 flex justify-around">
+      <section class="transform max-w-md mx-auto translate-y-0 sm:-translate-y-12 flex justify-around my-4">
         <button v-for="label in categories" :key="label" @click="setCurrentCategory(label)">
           {{ label }}
         </button>
       </section>
-      <section class="grid grid-cols-3 gap-6">
+      <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-6">
         <ProjectCard
           v-for="slug in projects.allIds"
           :key="slug"

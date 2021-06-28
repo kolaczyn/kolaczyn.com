@@ -1,13 +1,12 @@
 <template>
-  <div class="min-h-screen grid grid-cols-12">
-    <section class="col-span-3 border-r-4 border-denim-100">
+  <div class="min-h-screen flex">
+    <section class="border-r-4 border-denim-100 max-w-sm lg:max-w-md">
       <ProjectDescription
         :project="project"
       />
     </section>
-    <div class="col-span-9">
+    <div class="flex-1">
       <iframe class="w-full h-full" :src="project.url" />
-      <!-- <iframe class="w-full h-full" src="http://localhost:3000/project/lol" /> -->
     </div>
   </div>
 </template>
