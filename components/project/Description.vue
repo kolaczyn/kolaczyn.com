@@ -1,11 +1,15 @@
 <template>
   <div class="flex flex-col justify-between h-full">
     <div class="flex flex-col p-6">
-      <header class="flex items-center justify-between">
-        <BaseHeader as="h1">
-          {{ project.name }}
-        </BaseHeader>
-        <span>{{ projectIdx + 1 }} of {{ numberOfProjects }}</span>
+      <header>
+        <div class="flex items-center justify-between mb-2">
+          <BaseHeader as="h1">
+            {{ project.name }}
+          </BaseHeader>
+          <span>{{ projectIdx + 1 }} of {{ numberOfProjects }}</span>
+        </div>
+        <!-- <a target="_blank" class="text-xl text-denim-300 hover:text-denim-400 hover:underline transition duration-300" :href="project.url">{{ project.url }}</a> -->
+        <!-- <Icon name="camera" /> -->
       </header>
       <p class="my-10">
         {{

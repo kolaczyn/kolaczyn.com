@@ -1,4 +1,4 @@
-export const categories = ['All', 'React', 'Vue', 'Full Stack']
+export const categories = ['All', 'React', 'Vue', 'Full Stack', 'Vanilla']
 
 const projects = {
   byId: {
@@ -97,8 +97,53 @@ const projects = {
     ],
     about: 'A page for an imaginary website helping people to learn Japanese',
     postMortem: 'Now I know that I don\'t like writing CSS by hand, I prefer Tailwind. But at least I fell in love with Vue, so there\'s that'
+  },
+    'luke-smith':
+  {
+    name: 'Luke Smith',
+    url: 'https://luke-smith.kolaczyn.com',
+    categories: ['Vanilla'],
+    imgName: 'learn-japanese.png',
+    techStack: [
+      'Plain HTML',
+      'Vanilla JS',
+      'SCSS',
+      'BEM Methodology'
+    ],
+    about: "It's Luke Smith's website, but with different layout and styles. I made only home, donate and 404 page.",
+    postMortem: `Its my first ever self-written page. I configured webpack, designed and implemented the layout and wrote few lines of JS.
+    I'm satisfied with the results, even though the site looks pretty bad on mobile.
+    And it's the last time I ever wrote all the HTML by hand. Yuck.`
+  },
+    chess:
+  {
+    name: 'Chess',
+    url: 'https://chess.kolaczyn.com',
+    categories: ['Vanilla'],
+    imgName: 'learn-japanese.png',
+    techStack: [
+      'Plain HTML',
+      'Vanilla JS',
+      'SCSS',
+      'BEM Methodology'
+    ],
+    about: 'My implementation of the classic Chess game. It has all the rules expect Castling and En Passant. It also shows the most recent moves, whose turn is it and available moves.',
+    postMortem: "This is my first ever web project. And it might've been a little too ambitious. I've rewritten everything around 3 times, because kept trying to perfect the code."
+  },
+    portfolio:
+  {
+    name: 'My Website',
+    url: 'https://kolaczyn.com',
+    categories: ['Vue'],
+    imgName: 'learn-japanese.png',
+    techStack: [
+      'Vue',
+      'iFrames to show my other websites'
+    ],
+    about: 'Quite minimal portfolio website, I designed it and implemented the majority of it in two days.',
+    postMortem: 'I kept postponing the day I finally make my website. But I decided to settle on something simple. I will definitely improve this site as I improve my skills. But for now this simple website will do fine.'
   }
   },
-  allIds: ['track-fit', 'tech-blog', 'typing-test', 'reddit', '4chan', 'learn-japanese']
+  allIds: ['track-fit', 'tech-blog', 'typing-test', 'reddit', '4chan', 'learn-japanese', 'luke-smith', 'chess', 'portfolio']
 }
 export default projects
