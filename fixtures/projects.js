@@ -103,7 +103,7 @@ const projects = {
     name: 'Luke Smith',
     url: 'https://luke-smith.kolaczyn.com',
     categories: ['Vanilla'],
-    imgName: 'learn-japanese.png',
+    imgName: 'luke-smith.png',
     techStack: [
       'Plain HTML',
       'Vanilla JS',
@@ -120,7 +120,7 @@ const projects = {
     name: 'Chess',
     url: 'https://chess.kolaczyn.com',
     categories: ['Vanilla'],
-    imgName: 'learn-japanese.png',
+    imgName: 'chess.png',
     techStack: [
       'Plain HTML',
       'Vanilla JS',
@@ -135,7 +135,7 @@ const projects = {
     name: 'My Website',
     url: 'https://kolaczyn.com',
     categories: ['Vue'],
-    imgName: 'learn-japanese.png',
+    imgName: 'portfolio.png',
     techStack: [
       'Vue',
       'iFrames to show my other websites'
