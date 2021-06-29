@@ -23,11 +23,11 @@
           </section>
           <nav>
             <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-              <BaseButton href="#skills" primary>
-                My Skills
-              </BaseButton>
-              <BaseButton href="#projects">
+              <BaseButton href="#projects" primary>
                 My Projects
+              </BaseButton>
+              <BaseButton target="_blank" href="mailto:kolaczyn@protonmail.com">
+                Contact Me
               </BaseButton>
             </div>
           </nav>
