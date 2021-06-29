@@ -22,6 +22,18 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
 }
+h1 {
+  @apply text-5xl;
+}
+h2 {
+  @apply text-4xl;
+}
+h3 {
+  @apply text-3xl;
+}
+h3, h4, h5, h6 {
+  @apply text-2xl;
+}
 *, *::before ,*::after {
   box-sizing: border-box;
 }
