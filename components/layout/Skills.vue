@@ -9,7 +9,7 @@
       <slot />
     </div>
     <div class="flex-1 hidden md:inline">
-      <img class="self-center transform mx-auto" :src="require(`~/assets/${imgUrl}`)">
+      <img alt="" class="self-center transform mx-auto" :src="require(`~/assets/${imgUrl}`)">
     </div>
   </section>
 </template>

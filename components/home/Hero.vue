@@ -4,6 +4,7 @@
       <div class="grid grid-cols-12 gap-4 items-center">
         <div class="col-span-1 hidden md:inline" />
         <img
+          alt="Paweł Kołaczyński"
           class="rounded-full col-span-4 shadow-lg sm:inline hidden"
           :src="require('~/assets/avatar.jpg')"
         >

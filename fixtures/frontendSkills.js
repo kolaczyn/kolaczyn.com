@@ -7,7 +7,7 @@ export default {
     'Modern CSS, SCSS, Tailwind, Chakra UI',
     'Responsive Design',
     'JavaScript, TypeScript, ES6+',
-    'Git',
+    'Git, GitFlow',
     'React, Next.js, Redux, Styled Components, Formik',
     'Vue, Vuex, Nuxt.js',
     'Figma, basic web design skills',

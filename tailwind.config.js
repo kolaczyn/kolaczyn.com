@@ -1,6 +1,7 @@
 module.exports = {
   theme: {
     extend: {
+      translate: ['group-hover'],
       colors: {
         denim: {
           DEFAULT: '#185ADB',
