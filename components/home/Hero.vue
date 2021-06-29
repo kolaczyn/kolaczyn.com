@@ -21,14 +21,16 @@
               Currently, I'm looking for my first job in the industry.
             </p>
           </section>
-          <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <BaseButton href="#skills" primary>
-              My Skills
-            </BaseButton>
-            <BaseButton href="#projects">
-              My Projects
-            </BaseButton>
-          </div>
+          <nav>
+            <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+              <BaseButton href="#skills" primary>
+                My Skills
+              </BaseButton>
+              <BaseButton href="#projects">
+                My Projects
+              </BaseButton>
+            </div>
+          </nav>
         </section>
       </div>
     </LayoutContainer>
