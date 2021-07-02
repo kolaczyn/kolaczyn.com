@@ -10,7 +10,7 @@
         <template #header>
           {{ title }}
         </template>
-        <p class="my-3 opacity-75">
+        <p class="my-3 text-xl opacity-75">
           {{ subtitle }}
         </p>
         <ul class="list-inside list-disc">

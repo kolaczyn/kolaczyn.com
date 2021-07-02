@@ -3,7 +3,7 @@
     <div class="flex flex-col p-6">
       <header>
         <div class="flex items-center justify-between mb-2">
-          <BaseHeader render-as="h1">
+          <BaseHeader render-as="h2">
             {{ project.name }}
           </BaseHeader>
           <span>{{ projectIdx + 1 }} of {{ numberOfProjects }}</span>
@@ -22,7 +22,7 @@
           project.about
         }}
       </p>
-      <BaseHeader class="self-end" as="h2">
+      <BaseHeader class="self-end" as="h3">
         Tech Stack
       </BaseHeader>
       <ul class="my-6 list-inside list-disc">
