@@ -4,6 +4,7 @@
     <HomeSkills />
     <HomeProjects />
     <!-- <HomeContact /> -->
+    <BaseFooter />
   </div>
 </template>
 
@@ -16,9 +17,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-h1 > span {
-  background-color: red;
-  background-size: 100% 0.2em;
-}</style>

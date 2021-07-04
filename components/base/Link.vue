@@ -9,7 +9,6 @@
       transition
       duration-300
     "
-    :href="url"
   >
     <slot />
   </a>
