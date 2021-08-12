@@ -144,7 +144,7 @@ const projects = {
         'I really like how Article and Review pages turned out with that nice glass effect. I used Strapi as CMS, and my feelings towards it are mixed. Also, it took me a lot of time to get automatic deployment with GitHub action onto my VPS working. I much more prefer something like Contentful'
     },
     architecture: {
-      name: "Architect's Website",
+      name: 'Architect\'s Site',
       url: 'https://architect-portfolio.vercel.app/',
       categories: ['React'],
       imgName: 'architektura.png',
