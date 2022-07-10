@@ -4,7 +4,7 @@ const projects = {
   byId: {
     'track-fit': {
       name: 'Track Fit',
-      url: 'https://track-fit.me/food',
+      url: 'https://fit-tracker.vercel.app',
       categories: ['React'],
       imgName: 'track-fit.png',
       repo: 'https://github.com/kolaczyn/fit-tracker',
