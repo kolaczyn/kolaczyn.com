@@ -9,10 +9,16 @@ const { description, imgUrl, title, href } = Astro.props;
 ---
 
 <a
-  class="rounded-2xl overflow-hidden bg-gray-100 shadow hover:shadow-lg transition-shadow"
+  class="rounded-2xl overflow-hidden bg-gray-100 shadow hover:shadow-md transition-shadow group"
   href={href}
 >
-  <img height="304" width="304" src={imgUrl} alt={title} />
+  <div class="overflow-hidden w-full h-44">
+    <img
+      class="group-hover:scale-110 origin-bottom transition duration-100 ease-out"
+      src={imgUrl}
+      alt={title}
+    />
+  </div>
   <div class="p-2">
     <div class="font-bold text-lg">{title}</div>
     <di class="opacity-70">{description}</di>
