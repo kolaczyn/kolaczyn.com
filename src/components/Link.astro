@@ -1,0 +1,7 @@
+---
+export type Props = {
+  href: string;
+};
+---
+
+<a class="underline hover:text-gray-700" href={Astro.props.href}><slot /></a>
