@@ -1,12 +1,47 @@
 ---
+import Link from "../components/Link.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Paweł Kołaczyński">
-  <main>
-    <span>
-      <h1>Hi, I'm Paweł,</h1>
-      <span> and here are a few fun facts about me:</span>
-    </span>
+  <main class="max-w-2xl mx-auto p-4">
+    <div class="mt-8">
+      <h1 class="inline font-bold text-3xl">Hey, I'm Paweł,</h1>
+      <span class="text-gray-800 text-2xl">
+        and here are a few fun facts about me:</span
+      >
+    </div>
+    <ul class="list-disc list-inside pl-4 text-lg mt-4 mb-2">
+      <li>I'm a frontend developer specializing in React</li>
+      <li>
+        I have a modest portfolio of websites,
+        <Link href="https://github.com/kolaczyn">which you can see here</Link>
+      </li>
+      <li>
+        I know a thing or two about backend, but I prefer to stick to the
+        frontend
+      </li>
+      <li>I love learning about new technologies</li>
+      <li>Vim user</li>
+      <li>Functional programming enjoyer</li>
+    </ul>
+    <h2 class="text-2xl font-bold text-right mt-4 mb-2">My skillset</h2>
+    <ul class="list-disc list-inside w-1/2 ml-auto text-lg">
+      <li>I'm working at Rossmann SDP</li>
+      <li>I hate working with Redux</li>
+      <li>The last two points are not related</li>
+      <li>The last point was a lie</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mt-4 mb-2">My job</h2>
+    <ul class="list-disc list-inside text-lg">
+      <li>I'm working at Rossmann SDP</li>
+      <li>I hate working with Redux</li>
+      <li>The last two points are not related</li>
+      <li>The last point was a lie</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold text-right mt-4">Blogposts</h2>
+    <div class="text-right text-gray-700 text-lg">(Blog coming soon...)</div>
   </main>
 </Layout>

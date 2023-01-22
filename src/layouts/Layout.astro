@@ -1,7 +1,10 @@
 ---
-export interface Props {
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+export type Props = {
   title: string;
-}
+};
 
 const { title } = Astro.props;
 ---
@@ -16,10 +19,12 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <header>
-      <a href="/">kolaczyn.com</a>
-      <a href="https://github.com">github</a>
-    </header>
-    <slot />
+    <div class="flex flex-col min-h-screen">
+      <Header />
+      <div class="flex-1">
+        <slot />
+      </div>
+      <Footer />
+    </div>
   </body>
 </html>
