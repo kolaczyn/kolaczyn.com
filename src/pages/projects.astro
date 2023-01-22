@@ -1,0 +1,24 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+import exampleCard from "../assets/exampleCard.jpg";
+---
+
+<Layout title="Paweł Kołaczyński | Projects">
+  <main class="max-w-2xl mx-auto p-2 sm:p-4">
+    <h1 class="font-bold text-3xl mb-4">My Projects</h1>
+
+    <div class="grid-cols-2 grid gap-8">
+      {
+        [0, 1, 2, 3].map((_) => (
+          <Card
+            href="/"
+            title="Chess"
+            description="Lorem ipsum dolor set imet. Nani desu lorem kitana"
+            imgUrl={exampleCard}
+          />
+        ))
+      }
+    </div>
+  </main>
+</Layout>
