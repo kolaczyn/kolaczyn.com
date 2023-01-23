@@ -1,5 +1,5 @@
 ---
-import type { PostPreview } from "../types/PostPreview";
+import type { PostPreview } from "../../types/PostPreview";
 
 export type Props = PostPreview;
 const { imgUrl, publishDate, slug, title, teaser } = Astro.props;
@@ -9,7 +9,7 @@ const prettyDate = `21 January ${date.getFullYear()}`;
 
 <a
   href={`/blog/${slug}`}
-  class="flex shadow hover:shadow-md transition-shadow items-center rounded-md overflow-hidden"
+  class="flex shadow hover:shadow-md transition-shadow items-center rounded-md overflow-hidden border-gray-100 border"
 >
   <img class="aspect-square h-16 w-16 mr-2" src={imgUrl} alt={title} />
   <div class="flex flex-col min-w-0">
