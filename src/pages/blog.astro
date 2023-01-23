@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import trackFitImg from "../assets/cards/track-fit.png";
 import type { PostPreview } from "../types/PostPreview";
 import PostPreviewCard from "../components/PostPreviewCard.astro";
-import H1 from "../components/H1.astro";
+import H1 from "../components/ui/H1.astro";
 
 const postPreviews: PostPreview = {
   title: "hello world",
@@ -13,7 +13,7 @@ const postPreviews: PostPreview = {
   teaser: "lorem ipsum dolor set amet lol das da d dfa",
 };
 
-const isBlogEnabled = true;
+const isBlogEnabled = false;
 ---
 
 <Layout title="Paweł Kołaczyński | Blog">
