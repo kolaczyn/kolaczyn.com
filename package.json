@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "astro-compress": "^1.1.28",
     "svelte": "^3.46.4",
     "tailwindcss": "^3.0.24"
   },
