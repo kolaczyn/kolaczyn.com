@@ -4,4 +4,7 @@ export type Props = {
 };
 ---
 
-<a class="underline hover:text-gray-700" href={Astro.props.href}><slot /></a>
+<a
+  class="underline hover:text-gray-700 transition-colors duration-200"
+  href={Astro.props.href}><slot /></a
+>

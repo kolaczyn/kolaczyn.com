@@ -9,7 +9,7 @@ const blogPosts = (await getCollection("blog")).map((blog) => ({
   id: blog.id,
   title: blog.data.title as string,
   imgUrl: architektureImg,
-  teaser: "lorem ipsum dolor set amet lol das da d dfa",
+  teaser: "",
   publishDate: new Date().toString(),
   slug: blog.slug,
 }));

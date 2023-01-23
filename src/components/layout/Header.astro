@@ -1,19 +1,28 @@
 ---
-import Link from "../ui/Link.astro";
+import HeaderLink from "./HeaderLink.astro";
+
+const currentPath = Astro.url.pathname;
 ---
 
 <header class="bg-zinc-100 shadow">
-  <div class="mx-auto max-w-2xl p-2 sm:p-4 flex items-center justify-between">
+  <div
+    class="mx-auto max-w-2xl p-2 sm:p-4 flex flex-col sm:flex-row items-center justify-between"
+  >
     <a class="font-bold text-lg hover:text-gray-700" href="/">kolaczyn.com</a>
     <ul class="flex gap-x-3">
       <li>
-        <Link href="https://github.com">github</Link>
+        <HeaderLink href="https://github.com">github</HeaderLink>
       </li>
       <li>
-        <Link href="mailto:kolaczyn@protonmail.com">mail</Link>
+        <HeaderLink href="mailto:kolaczyn@protonmail.com">mail</HeaderLink>
       </li>
       <li>
-        <Link href="/projects">projects</Link>
+        <HeaderLink href="/projects" currentPath={currentPath}>
+          projects
+        </HeaderLink>
+      </li>
+      <li>
+        <HeaderLink href="/blog" currentPath={currentPath}>blog</HeaderLink>
       </li>
     </ul>
   </div>
