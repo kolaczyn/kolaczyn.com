@@ -11,10 +11,10 @@ const blogPosts = (await getCollection("blog")).map((blog) => ({
   imgUrl: architektureImg,
   teaser: "lorem ipsum dolor set amet lol das da d dfa",
   publishDate: new Date().toString(),
-  slug: "hello-world",
+  slug: blog.slug,
 }));
 
-const isBlogEnabled = false;
+const isBlogEnabled = true;
 ---
 
 <Layout title="Paweł Kołaczyński | Blog">
