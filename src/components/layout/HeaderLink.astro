@@ -1,0 +1,14 @@
+---
+export type Props = {
+  href: string;
+  currentPath?: string;
+};
+const { currentPath, href } = Astro.props;
+---
+
+<a
+  class={`hover:text-gray-700 transition-colors duration-200 ${
+    currentPath === href ? "underline" : "hover:underline"
+  }`}
+  href={href}><slot /></a
+>
