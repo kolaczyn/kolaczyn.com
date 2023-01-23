@@ -1,5 +1,6 @@
 ---
 import type { PostPreview } from "../../types/PostPreview";
+import ElipsisText from "../ui/ElipsisText.astro";
 
 export type Props = PostPreview;
 const { imgUrl, publishDate, slug, title, teaser } = Astro.props;
@@ -13,12 +14,15 @@ const prettyDate = `21 January ${date.getFullYear()}`;
 >
   <img class="aspect-square h-16 w-16 mr-2" src={imgUrl} alt={title} />
   <div class="flex flex-col min-w-0">
-    <span>
+    <ElipsisText>
       <span class="font-bold">{title}</span>
+      {" • "}
       <span class="opacity-75 italic">{prettyDate}</span>
-    </span>
-    <span class="opacity-75 whitespace-nowrap overflow-hidden text-ellipsis"
-      >{teaser}</span
-    >
+    </ElipsisText>
+    <ElipsisText>
+      <div class="opacity-75">
+        {teaser}
+      </div>
+    </ElipsisText>
   </div>
 </a>

@@ -1,5 +1,4 @@
 ---
-import TestingLibraryLink from "../components/index/TestingLibraryLink.astro";
 import Link from "../components/ui/Link.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -29,9 +28,11 @@ import Layout from "../layouts/Layout.astro";
       <li>React, Redux, Next.js, Angular, Rxjs</li>
       <li>JavaScript, TypeScript</li>
       <li>Webpack, Vite</li>
-      <li>Jest, Storybook, <TestingLibraryLink />, Cypress</li>
+      <li>
+        Jest, Storybook, <abbr title="React Testing Library">RTL</abbr>, Cypress
+      </li>
       <li>Astro, Solid, Qwik, Svelte</li>
-      <li>Basic C# and .NET skills</li>
+      <li>Basic C# and .NET</li>
     </ul>
 
     <h2 class="text-2xl font-bold mt-4 mb-2">My job</h2>
@@ -39,12 +40,12 @@ import Layout from "../layouts/Layout.astro";
       <li>I'm working at Rossmann SDP</li>
       <li>I hate working with Redux</li>
       <li>The last two points are not related</li>
-      <li>The last point was a lie</li>
+      <li>The last point is a lie</li>
     </ul>
 
     <div class="text-left md:text-right">
-      <h2 class="text-2xl font-bold mt-4">Blogposts</h2>
-      <div class="text-gray-700 text-lg">(Blog coming soon...)</div>
+      <h2 class="text-2xl font-bold mt-4 mb-2">Blogposts</h2>
+      <Link href="/blog">Visit here</Link>
     </div>
   </main>
 </Layout>
