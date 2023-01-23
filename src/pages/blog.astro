@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import trackFitImg from "../assets/cards/track-fit.png";
+import type { PostPreview } from "../types/PostPreview";
+import H1 from "../components/ui/H1.astro";
+import PostPreviewCard from "../components/blog/PostPreviewCard.astro";
+
+const postPreviews: PostPreview = {
+  title: "hello world",
+  slug: "hello-world",
+  publishDate: new Date().toString(),
+  imgUrl: trackFitImg,
+  teaser: "lorem ipsum dolor set amet lol das da d dfa",
+};
+
+const isBlogEnabled = false;
+---
+
+<Layout title="Paweł Kołaczyński | Blog">
+  <main class="max-w-2xl mx-auto p-2 sm:p-4">
+    {
+      isBlogEnabled ? (
+        <>
+          <H1>Blog</H1>
+          <div class="grid-cols-1 sm:grid-cols-2 grid gap-5">
+            <PostPreviewCard {...postPreviews} />
+            <PostPreviewCard {...postPreviews} />
+            <PostPreviewCard {...postPreviews} />
+            <PostPreviewCard {...postPreviews} />
+            <PostPreviewCard {...postPreviews} />
+            <PostPreviewCard {...postPreviews} />
+            <PostPreviewCard {...postPreviews} />
+            <PostPreviewCard {...postPreviews} />
+            <PostPreviewCard {...postPreviews} />
+            <PostPreviewCard {...postPreviews} />
+          </div>
+        </>
+      ) : (
+        <H1>Blog not ready yet</H1>
+      )
+    }
+  </main>
+</Layout>

@@ -1,11 +1,11 @@
 ---
-import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 
 import architectureImg from "../assets/cards/architektura.png";
 import techBlogImg from "../assets/cards/tech-blog.png";
 import trackFitImg from "../assets/cards/track-fit.png";
 import typingTestImg from "../assets/cards/typing-test.png";
+import ProjectCard from "../components/projects/ProjectCard.astro";
 ---
 
 <Layout title="Paweł Kołaczyński | Projects">
@@ -13,25 +13,25 @@ import typingTestImg from "../assets/cards/typing-test.png";
     <h1 class="font-bold text-3xl mb-4">My Projects</h1>
 
     <div class="grid-cols-1 sm:grid-cols-2 grid gap-8">
-      <Card
+      <ProjectCard
         href="https://architektura.kolaczyn.com/"
         title="Architect's Portfolio"
         description="Written in Gatsby, Contentful as CMS"
         imgUrl={architectureImg}
       />
-      <Card
+      <ProjectCard
         href="https://tech-blog.kolaczyn.com/"
         title="Tech Blog"
         description="Next.js, Tailwind"
         imgUrl={techBlogImg}
       />
-      <Card
+      <ProjectCard
         href="https://fit-tracker.vercel.app/"
         title="Track Fit"
         description="Next.js, Redux Toolkit, ChakraUI"
         imgUrl={trackFitImg}
       />
-      <Card
+      <ProjectCard
         href="https://typing-test.kolaczyn.com/"
         title="Typing Test"
         description="React, Firebase"
