@@ -1,10 +1,10 @@
 import { defineConfig } from "astro/config";
-
-// https://astro.build/config
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
+import svelte from "@astrojs/svelte";
+import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [mdx(), tailwind()],
+  integrations: [mdx(), tailwind(), svelte(), compress()]
 });
