@@ -1,11 +1,15 @@
 ---
 const currentYear = new Date().getFullYear();
+import HeaderLink from "./HeaderLink.astro";
 ---
 
 <footer class="bg-zinc-100">
   <div class="mx-auto max-w-2xl p-2 sm:p-4 text-sm flex flex-col items-center">
     <span class="text-gray-700"
       >&copy; {currentYear} created by Paweł Kołaczyński</span
+    >
+    <span class="text-gray-700"
+      >powered by blazingly fast <HeaderLink href="https://astro.build">Astro</HeaderLink></span
     >
     <span class="text-gray-700"
       >dunno what I"m adding a copyright, but why not :p</span
