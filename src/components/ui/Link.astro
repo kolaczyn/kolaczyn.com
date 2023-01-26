@@ -1,10 +1,15 @@
 ---
 export type Props = {
   href: string;
+  openInNewTab?: boolean;
 };
+
+const openInNewTab = Astro.props.openInNewTab ?? false;
 ---
 
 <a
+  target={openInNewTab ? "_blank" : "_self"}
+  rel={openInNewTab ? "noopener noreferrer" : ""}
   class="underline hover:text-gray-700 transition-colors duration-200"
   href={Astro.props.href}><slot /></a
 >
