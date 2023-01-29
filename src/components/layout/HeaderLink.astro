@@ -11,7 +11,7 @@ const openInNewTab = Astro.props.openInNewTab ?? false;
 <a
   target={openInNewTab ? "_blank" : "_self"}
   rel={openInNewTab ? "noopener noreferrer" : ""}
-  class={`py-4 hover:text-gray-700 transition-colors duration-200 ${
+  class={`py-4 px-2 hover:text-gray-700 transition-colors duration-200 text-lg ${
     currentPath === href ? "underline" : "hover:underline"
   }`}
   href={href}><slot /></a

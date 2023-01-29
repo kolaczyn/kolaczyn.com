@@ -6,17 +6,19 @@ const currentPath = Astro.url.pathname;
 
 <header class="bg-zinc-100 shadow">
   <div
-    class="mx-auto max-w-2xl p-2 sm:p-4 flex flex-col sm:flex-row items-center justify-between"
+    class="mx-auto max-w-2xl p-2 sm:p-4 flex flex-col sm:flex-row items-center justify-between gap-y-1"
   >
-    <a class="font-bold text-lg hover:text-gray-700" href="/">kolaczyn.com</a>
-    <ul class="flex gap-x-3">
+    <a class="font-bold text-2xl hover:text-gray-700 py-2" href="/"
+      >kolaczyn.com</a
+    >
+    <ul class="flex gap-x-1">
       <li>
         <HeaderLink openInNewTab href="https://github.com/kolaczyn">
           github
         </HeaderLink>
       </li>
       <li>
-        <HeaderLink href="mailto:kolaczyn@protonmail.com">mail</HeaderLink>
+        <HeaderLink href="mailto:kolaczyn@protonmail.com">email</HeaderLink>
       </li>
       <li>
         <HeaderLink href="/projects" currentPath={currentPath}>
