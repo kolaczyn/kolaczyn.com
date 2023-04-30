@@ -1,48 +1,50 @@
 ---
 import Link from "../../components/ui/Link.astro";
+import { useTranslations } from "../../i18n/useTranslations";
 export { getLangStaticPaths as getStaticPaths } from "../../i18n/getLangStaticPaths";
 import Layout from "../../layouts/Layout.astro";
 
-const { lang } = Astro.params;
+const { t, lang } = useTranslations(Astro);
 ---
 
 <Layout title="Paweł Kołaczyński">
   <main class="max-w-2xl mx-auto p-2 sm:p-4">
     <div>
-      <h1 class="inline font-bold text-3xl">Hey, I'm Paweł,</h1>
-      <span class="text-gray-800 text-2xl block md:inline">
-        &nbsp;and here are a few fun facts about me:</span
+      <h1 class="inline font-bold text-3xl">{t("home.h1-big")}</h1>
+      <span class="text-gray-800 text-2xl block md:inline"
+        >{t("home.h1-small")}</span
       >
     </div>
     <ul class="list-disc list-inside text-lg mt-4 mb-2">
-      <li>I'm a frontend developer specializing in React</li>
+      <li>{t("home.fun-facts.1")}</li>
       <li>
-        I have a modest portfolio of websites,
+        {t("home.fun-facts.2.outside-link")}
         <Link openInNewTab href={`/${lang}/projects`}>
-          which you can see here
+          {t("home.fun-facts.2.inside-link")}
         </Link>
       </li>
-      <li>I love learning about new frontend technologies</li>
-      <li>Vim user</li>
+      <li>{t("home.fun-facts.3")}</li>
+      <li>{t("home.fun-facts.4")}</li>
       <li>
-        Functional programming enjoyer
+        {t("home.fun-facts.5.outside-brackets")}
         <Link openInNewTab href="https://github.com/kolaczyn/fpts">
-          (proof)
+          ({t("home.fun-facts.5.inside-brackest")})
         </Link>
       </li>
     </ul>
     <h2 class="text-2xl font-bold text-left md:text-right mt-4 mb-2">
-      My skillset
+      {t("home.skillset.title")}
     </h2>
     <ul class="list-disc list-inside w-full md:w-1/2 ml-auto text-lg">
       <li>React, Redux, Next.js, Angular, Rxjs</li>
       <li>JavaScript, TypeScript</li>
       <li>Webpack, Vite</li>
       <li>
-        Jest, Storybook, <abbr title="React Testing Library">RTL</abbr>, Cypress
+        Jest, TDD, <abbr title="React Testing Library">RTL</abbr>, Storybook,
+        Cypress
       </li>
       <li>Astro, Solid, Qwik, Svelte</li>
-      <li>Basics of Rust, Python, Golang, Swift and C#</li>
+      <li>{t("home.skillset.6")}</li>
     </ul>
   </main>
 </Layout>
