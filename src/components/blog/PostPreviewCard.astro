@@ -1,4 +1,5 @@
 ---
+import { useTranslations } from "../../i18n/useTranslations";
 import type { PostPreview } from "../../types/PostPreview";
 import ElipsisText from "../ui/ElipsisText.astro";
 
@@ -6,10 +7,11 @@ export type Props = PostPreview;
 const { imgUrl, publishDate, slug, title, teaser } = Astro.props;
 const date = new Date(publishDate);
 const prettyDate = `21 January ${date.getFullYear()}`;
+const { lang } = useTranslations(Astro);
 ---
 
 <a
-  href={`/blog/${slug}`}
+  href={`${lang}/blog/${slug}`}
   class="flex shadow hover:shadow-md transition-shadow items-center rounded-md overflow-hidden border-gray-100 border"
 >
   <img class="aspect-square h-16 w-16 mr-2" src={imgUrl} alt={title} />

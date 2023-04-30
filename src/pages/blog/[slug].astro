@@ -2,7 +2,10 @@
 import { getCollection } from "astro:content";
 import Link from "../../components/ui/Link.astro";
 import Layout from "../../layouts/Layout.astro";
+import { useTranslations } from "../../i18n/useTranslations";
+import { defaultLanuage } from "../../i18n/constants";
 
+// TODO add i18n
 export const getStaticPaths = async () =>
   (await getCollection("blog")).map((blog) => ({
     props: blog,
@@ -17,13 +20,13 @@ const pageTitle = `${data.title} | Paweł Kołaczyński's Blog`;
 const { Content } = await render();
 ---
 
-<Layout title={pageTitle}>
-  <main class="max-w-2xl mx-auto p-2 sm:p-4">
-    <div class="mb-4">
-      <Link href="/blog">⬅ Back to all blogs</Link>
-    </div>
-    <div class="prose">
-      <Content />
-    </div>
-  </main>
-</Layout>
+<!-- TODO fix once blog is fixed with i18n --><!-- <Layout title={pageTitle}> -->
+<main class="max-w-2xl mx-auto p-2 sm:p-4">
+  <div class="mb-4">
+    <Link href="/blog">⬅ Back to all blogs</Link>
+  </div>
+  <div class="prose">
+    <Content />
+  </div>
+</main>
+<!-- </Layout> -->

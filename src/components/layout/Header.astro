@@ -1,6 +1,8 @@
 ---
+import { useTranslations } from "../../i18n/useTranslations";
 import { isBlogEnabled } from "../../utils/flags";
 import HeaderLink from "./HeaderLink.astro";
+const { t, lang } = useTranslations(Astro);
 
 const currentPath = Astro.url.pathname;
 ---
@@ -9,29 +11,29 @@ const currentPath = Astro.url.pathname;
   <div
     class="mx-auto max-w-2xl p-2 sm:p-4 flex flex-col sm:flex-row items-center justify-between gap-y-1"
   >
-    <a class="font-bold text-2xl hover:text-gray-700 py-2" href="/"
-      >kolaczyn.com</a
+    <a class="font-bold text-2xl hover:text-gray-700 py-2" href={`/${lang}`}>
+      kolaczyn.com</a
     >
     <ul class="flex gap-x-1">
       <li>
         <HeaderLink openInNewTab href="https://github.com/kolaczyn">
-          github
+          {t("nav.github")}
         </HeaderLink>
       </li>
       <li>
         <HeaderLink href="https://code-review-suggestions.vercel.app">
-          code review
+          {t("nav.code-review")}
         </HeaderLink>
       </li>
       <li>
-        <HeaderLink href="/projects" currentPath={currentPath}>
-          projects
+        <HeaderLink href={`/${lang}/projects`} currentPath={currentPath}>
+          {t("nav.projects")}
         </HeaderLink>
       </li>
       {
         isBlogEnabled && (
           <li>
-            <HeaderLink href="/blog" currentPath={currentPath}>
+            <HeaderLink href={`/${lang}/blog`} currentPath={currentPath}>
               blog
             </HeaderLink>
           </li>

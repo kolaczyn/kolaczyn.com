@@ -1,0 +1,43 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import architectureImg from "../../assets/cards/architektura.png";
+import techBlogImg from "../../assets/cards/tech-blog.png";
+import trackFitImg from "../../assets/cards/track-fit.png";
+import typingTestImg from "../../assets/cards/typing-test.png";
+import ProjectCard from "../../components/projects/ProjectCard.astro";
+export { getLangStaticPaths as getStaticPaths } from "../../i18n/getLangStaticPaths";
+---
+
+<Layout title="Paweł Kołaczyński | Projects">
+  <main class="max-w-2xl mx-auto p-2 sm:p-4">
+    <h1 class="font-bold text-3xl mb-4">My Projects</h1>
+
+    <div class="grid-cols-1 sm:grid-cols-2 grid gap-8">
+      <ProjectCard
+        href="https://architektura.kolaczyn.com/"
+        title="Architect's Portfolio"
+        description="Written in Gatsby, Contentful as CMS"
+        imgUrl={architectureImg}
+      />
+      <ProjectCard
+        href="https://tech-blog.kolaczyn.com/"
+        title="Tech Blog"
+        description="Next.js, Tailwind"
+        imgUrl={techBlogImg}
+      />
+      <ProjectCard
+        href="https://fit-tracker.vercel.app/"
+        title="Track Fit"
+        description="Next.js, Redux Toolkit, ChakraUI"
+        imgUrl={trackFitImg}
+      />
+      <ProjectCard
+        href="https://typing-test.kolaczyn.com/"
+        title="Typing Test"
+        description="React, Firebase"
+        imgUrl={typingTestImg}
+      />
+    </div>
+  </main>
+</Layout>
