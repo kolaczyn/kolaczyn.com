@@ -2,14 +2,14 @@ import type { TranslationDict as Translations } from "./types";
 
 export const translations: Translations = {
   en: {
-    "nav.code-review": "Code Review",
-    "nav.github": "Github",
-    "nav.projects": "Projects",
+    "nav.code-review": "code review",
+    "nav.github": "github",
+    "nav.projects": "projects",
 
     "footer.copy": "created by Paweł Kołaczyński",
     "footer.why-copy": "dunno what I'm adding a copyright, but why not :p",
 
-    "home.h1-big": "Hey, I'm Paweł, ",
+    "home.h1-big": "Hey, I'm Paweł,",
     "home.h1-small": "and here are a few fun facts about me:",
     "home.fun-facts.1": "I'm a frontend developer specializing in React",
     "home.fun-facts.2.outside-link": "I have a modest portfolio of websites, ",
@@ -23,7 +23,7 @@ export const translations: Translations = {
     "home.skillset.6": "Basics: Rust, Python, Go, Swift, C#",
   },
   pl: {
-    "nav.projects": "Projekty",
+    "nav.projects": "projekty",
 
     "footer.copy": "Paweł Kołaczyński",
     "footer.why-copy": "nie wiem czemu daję copyright, ale why not :p",
