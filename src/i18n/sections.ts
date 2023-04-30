@@ -15,4 +15,6 @@ type HomeFunFacts =
 
 type HomeSkillset = "home.skillset.title" | "home.skillset.6";
 
-export type Section = Nav | Footer | Home;
+type Projects = `projects.${"title" | "header"}`;
+
+export type Section = Nav | Footer | Home | Projects;

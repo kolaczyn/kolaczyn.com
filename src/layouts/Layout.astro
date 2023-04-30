@@ -1,16 +1,18 @@
 ---
 import Footer from "../components/layout/Footer.astro";
 import Header from "../components/layout/Header.astro";
+import { useTranslations } from "../i18n/useTranslations";
 
 export type Props = {
   title: string;
 };
 
 const { title } = Astro.props;
+const { lang } = useTranslations(Astro);
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />

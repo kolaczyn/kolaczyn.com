@@ -18,9 +18,11 @@ export const translations: Translations = {
     "home.fun-facts.4": "Vim user",
     "home.fun-facts.5.outside-brackets": "Functional programming enjoyer",
     "home.fun-facts.5.inside-brackest": "proof",
-
     "home.skillset.title": "My skillset",
     "home.skillset.6": "Basics: Rust, Python, Go, Swift, C#",
+
+    "projects.title": "My Projects | Paweł Kołaczyński",
+    "projects.header": "My Projects",
   },
   pl: {
     "nav.projects": "projekty",
@@ -38,8 +40,10 @@ export const translations: Translations = {
     "home.fun-facts.4": "Vim-uję",
     "home.fun-facts.5.outside-brackets": "Kocham programowanie funkcyjne",
     "home.fun-facts.5.inside-brackest": "dowód",
-
     "home.skillset.title": "Mój skillset",
     "home.skillset.6": "Podstawy - Rust, Python, Go, C#",
+
+    "projects.title": "Moje Projekty | Paweł Kołaczyński",
+    "projects.header": "Moje Projekty",
   },
 };

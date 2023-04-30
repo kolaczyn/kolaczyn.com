@@ -6,18 +6,20 @@ import techBlogImg from "../../assets/cards/tech-blog.png";
 import trackFitImg from "../../assets/cards/track-fit.png";
 import typingTestImg from "../../assets/cards/typing-test.png";
 import ProjectCard from "../../components/projects/ProjectCard.astro";
+import { useTranslations } from "../../i18n/useTranslations";
 export { getLangStaticPaths as getStaticPaths } from "../../i18n/getLangStaticPaths";
+const { t } = useTranslations(Astro);
 ---
 
-<Layout title="Paweł Kołaczyński | Projects">
+<Layout title={t("projects.title")}>
   <main class="max-w-2xl mx-auto p-2 sm:p-4">
-    <h1 class="font-bold text-3xl mb-4">My Projects</h1>
+    <h1 class="font-bold text-3xl mb-4">{t("projects.header")}</h1>
 
     <div class="grid-cols-1 sm:grid-cols-2 grid gap-8">
       <ProjectCard
         href="https://architektura.kolaczyn.com/"
         title="Architect's Portfolio"
-        description="Written in Gatsby, Contentful as CMS"
+        description="Gatsby, Contentful as CMS"
         imgUrl={architectureImg}
       />
       <ProjectCard

@@ -1,1 +1,11 @@
-<meta http-equiv="refresh" content="0;url=/en/playground" />
+---
+import Counter from "../components/playground/Counter.svelte";
+export { getLangStaticPaths as getStaticPaths } from "../i18n/getLangStaticPaths";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="This is my playground for experimantation">
+  <main class="max-w-2xl mx-auto p-2 sm:p-4">
+    <Counter client:load />
+  </main>
+</Layout>
