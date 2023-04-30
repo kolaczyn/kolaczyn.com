@@ -1,11 +1,12 @@
 ---
+import { Image } from "@astrojs/image/components";
 export type Props = {
-  imgUrl: string;
+  image: ImageMetadata;
   title: string;
   description: string;
   href: string;
 };
-const { description, imgUrl, title, href } = Astro.props;
+const { description, image, title, href } = Astro.props;
 ---
 
 <a
@@ -15,9 +16,10 @@ const { description, imgUrl, title, href } = Astro.props;
   href={href}
 >
   <div class="overflow-hidden w-full h-44">
-    <img
+    <Image
+      width={320}
       class="group-hover:scale-110 origin-bottom transition duration-100 ease-out"
-      src={imgUrl}
+      src={image}
       alt={title}
     />
   </div>
