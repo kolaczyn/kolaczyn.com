@@ -1,5 +1,6 @@
 type Nav = "nav.github" | "nav.code-review" | "nav.projects";
 type Footer = "footer.copy" | "footer.why-copy";
+
 type Home = HomeFunFacts | HomeHeader | HomeSkillset;
 
 type HomeHeader = "home.h1-big" | "home.h1-small";
@@ -17,4 +18,6 @@ type HomeSkillset = "home.skillset.title" | "home.skillset.6";
 
 type Projects = `projects.${"title" | "header"}`;
 
-export type Section = Nav | Footer | Home | Projects;
+type Meta = "meta.testing" | "meta.testing-fallback";
+
+export type Section = Nav | Footer | Home | Projects | Meta;

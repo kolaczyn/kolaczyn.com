@@ -23,6 +23,9 @@ export const translations: Translations = {
 
     "projects.title": "My Projects | Paweł Kołaczyński",
     "projects.header": "My Projects",
+
+    "meta.testing": "This is for my unit tests",
+    "meta.testing-fallback": "This is only in en, but not in pl",
   },
   pl: {
     "nav.projects": "projekty",
@@ -45,5 +48,7 @@ export const translations: Translations = {
 
     "projects.title": "Moje Projekty | Paweł Kołaczyński",
     "projects.header": "Moje Projekty",
+
+    "meta.testing": "This is for my unit tests",
   },
 };

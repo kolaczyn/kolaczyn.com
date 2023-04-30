@@ -8,7 +8,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "vitest",
+    "test:run": "vitest --run"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
@@ -20,6 +22,7 @@
     "@astrojs/mdx": "1.0.0-beta.2",
     "@astrojs/svelte": "2.0.0",
     "@astrojs/tailwind": "3.0.0",
-    "astro": "2.0.2"
+    "astro": "2.0.2",
+    "vitest": "^0.30.1"
   }
 }

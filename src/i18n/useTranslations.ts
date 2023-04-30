@@ -4,7 +4,7 @@ import { defaultLanuage } from "./constants";
 import { translations } from "./translations";
 import type { Section } from "./sections";
 
-export const getLanguageFromURL = (pathname: string): Language => {
+const getLanguageFromURL = (pathname: string): Language => {
   // workaround, for now
   if (pathname.startsWith("/blog")) return defaultLanuage;
   const langCodeMatch = pathname.match(/\/([a-z]{2})/)?.[1];
@@ -18,5 +18,7 @@ export const useTranslations = (Astro: Readonly<AstroGlobal>) => {
 
   const dict = translations[lang];
   const fallback = translations[defaultLanuage];
-  return { t: (key: Section) => dict[key] ?? fallback[key], lang };
+
+  const t = (key: Section) => dict[key] ?? fallback[key];
+  return { t, lang };
 };
