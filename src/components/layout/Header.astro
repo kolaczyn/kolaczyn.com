@@ -1,4 +1,5 @@
 ---
+import { isBlogEnabled } from "../../utils/flags";
 import HeaderLink from "./HeaderLink.astro";
 
 const currentPath = Astro.url.pathname;
@@ -27,9 +28,15 @@ const currentPath = Astro.url.pathname;
           projects
         </HeaderLink>
       </li>
-      <li>
-        <HeaderLink href="/blog" currentPath={currentPath}>blog</HeaderLink>
-      </li>
+      {
+        isBlogEnabled && (
+          <li>
+            <HeaderLink href="/blog" currentPath={currentPath}>
+              blog
+            </HeaderLink>
+          </li>
+        )
+      }
     </ul>
   </div>
 </header>
