@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.16.6",
+    "@astrojs/partytown": "^1.2.0",
     "@tailwindcss/typography": "^0.5.9",
     "astro-compress": "^1.1.42",
     "sharp": "0.31.3",
