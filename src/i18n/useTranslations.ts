@@ -1,8 +1,9 @@
 import type { AstroGlobal } from "astro";
-import type { Language } from "./types";
-import { defaultLanuage } from "./constants";
+import type { DefaultLanguage, Language } from "./types";
 import { translations } from "./translations";
 import type { Section } from "./sections";
+
+export const defaultLanuage: DefaultLanguage = "en";
 
 const getLanguageFromURL = (pathname: string): Language => {
   // workaround, for now
