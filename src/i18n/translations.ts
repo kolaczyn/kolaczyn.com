@@ -42,7 +42,7 @@ export const translations: Translations = {
   pl: {
     "nav.code-review": "code review",
     "nav.github": "github",
-    "nav.projects": "projects",
+    "nav.projects": "projekty",
 
     "footer.copy": "Paweł Kołaczyński",
     "footer.why-copy": "nie wiem czemu daję copyright, ale why not :p",
