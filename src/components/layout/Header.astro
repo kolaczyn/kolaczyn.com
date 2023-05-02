@@ -11,7 +11,7 @@ const currentPath = Astro.url.pathname;
   <div
     class="mx-auto max-w-2xl p-2 sm:p-4 flex flex-col sm:flex-row items-center justify-between gap-y-1"
   >
-    <a class="font-bold text-2xl hover:text-gray-700 py-2" href={`/${lang}`}>
+    <a class="font-bold text-2xl hover:text-gray-700 py-2" href={`/${lang}/`}>
       kolaczyn.com</a
     >
     <ul class="flex gap-x-1">
@@ -26,14 +26,14 @@ const currentPath = Astro.url.pathname;
         </HeaderLink>
       </li>
       <li>
-        <HeaderLink href={`/${lang}/projects`} currentPath={currentPath}>
+        <HeaderLink href={`/${lang}/projects/`} currentPath={currentPath}>
           {t("nav.projects")}
         </HeaderLink>
       </li>
       {
         isBlogEnabled && (
           <li>
-            <HeaderLink href={`/${lang}/blog`} currentPath={currentPath}>
+            <HeaderLink href={`/${lang}/blog/`} currentPath={currentPath}>
               blog
             </HeaderLink>
           </li>

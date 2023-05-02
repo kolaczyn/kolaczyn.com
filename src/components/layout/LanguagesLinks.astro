@@ -1,0 +1,23 @@
+---
+import { languages } from "../../i18n/languages";
+import type { Language } from "../../i18n/types";
+import { useTranslations } from "../../i18n/useTranslations";
+const { lang: currentLang } = useTranslations(Astro);
+
+const getLinkToLang = (lang: Language) => {
+  const path = Astro.url.pathname;
+  return path.replace(`/${currentLang}/`, `/${lang}/`);
+};
+---
+
+<span>
+  {
+    languages.map((l) => (
+      <span>
+        <a class="hover:underline" href={getLinkToLang(l.code)}>
+          {l.displayName}
+        </a>
+      </span>
+    ))
+  }
+</span>

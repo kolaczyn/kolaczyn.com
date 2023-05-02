@@ -1,8 +1,8 @@
 ---
 const currentYear = new Date().getFullYear();
-import { languages } from "../../i18n/languages";
 import { useTranslations } from "../../i18n/useTranslations";
-const { t, lang } = useTranslations(Astro);
+import LanguagesLinks from "./LanguagesLinks.astro";
+const { t } = useTranslations(Astro);
 ---
 
 <footer class="bg-zinc-100">
@@ -10,16 +10,6 @@ const { t, lang } = useTranslations(Astro);
     <span class="text-gray-700">&copy; {currentYear} {t("footer.copy")}</span>
 
     <span class="text-gray-700">{t("footer.why-copy")}</span>
-    <span>
-      {
-        languages.map((l) => (
-          <span>
-            <a class="hover:underline" href={`/${l.code}`}>
-              {l.displayName}
-            </a>
-          </span>
-        ))
-      }
-    </span>
+    <LanguagesLinks />
   </div>
 </footer>
