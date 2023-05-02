@@ -1,0 +1,17 @@
+---
+import Link from "../ui/Link.astro";
+
+export type Props = {
+  link: string;
+  name: string;
+  description: string;
+};
+const { description, link, name } = Astro.props;
+---
+
+<li>
+  <b>
+    {name}
+  </b>
+  (<Link href={link} openInNewTab>link</Link>) - {description}
+</li>

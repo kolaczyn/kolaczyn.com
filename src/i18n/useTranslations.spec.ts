@@ -24,14 +24,4 @@ describe("getting translation", () => {
       } as AstroGlobal).t("meta.testing")
     ).toBe("This is for my unit tests");
   });
-
-  it("uses fallback", () => {
-    expect(
-      useTranslations({
-        url: {
-          pathname: "/pl",
-        },
-      } as AstroGlobal).t("meta.testing-fallback")
-    ).toBe("This is only in en, but not in pl");
-  });
 });

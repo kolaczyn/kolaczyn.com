@@ -1,13 +1,19 @@
 import { test, expect } from "@playwright/test";
 
-test("visual on /en/home", async ({ page }) => {
-  await page.goto("http://localhost:3000/en");
+const URL = "http://localhost:3002";
 
-  await expect(page).toHaveScreenshot();
+test("visual on /en/home", async ({ page }) => {
+  await page.goto(`${URL}/en/`);
+
+  await expect(page).toHaveScreenshot({
+    fullPage: true,
+  });
 });
 
 test("visual on /pl/projects", async ({ page }) => {
-  await page.goto("http://localhost:3000/pl/projects");
+  await page.goto(`${URL}/pl/projects/`);
 
-  await expect(page).toHaveScreenshot();
+  await expect(page).toHaveScreenshot({
+    fullPage: true,
+  });
 });

@@ -16,8 +16,17 @@ type HomeFunFacts = `fun-facts.${
 
 type HomeSkillset = "skillset.title" | "skillset.6";
 
-type Projects = `projects.${"title" | "header"}`;
+type Projects = `projects.${
+  | "title"
+  | "h1"
+  | "h2.websites"
+  | "h2.applications"
+  | "list.typescript-template.description"
+  | "list.rough-edit.description"
+  | "list.promotion-checker.description"
+  | "list.fpts.description"
+  | "list.todo-rs.description"}`;
 
-type Meta = "meta.testing" | "meta.testing-fallback";
+type Meta = "meta.testing";
 
 export type Section = Nav | Footer | Home | Projects | Meta;

@@ -22,13 +22,27 @@ export const translations: Translations = {
     "home.skillset.6": "Basics: Rust, Python, Go, Swift, C#",
 
     "projects.title": "My Projects | Paweł Kołaczyński",
-    "projects.header": "My Projects",
+    "projects.h1": "My Projects",
+    "projects.h2.websites": "Websites",
+    "projects.h2.applications": "Applications & others",
+
+    "projects.list.typescript-template.description":
+      "Starter with Jest, ESlint, Prettier, GitHub Actions (and more) preconfigured",
+    "projects.list.fpts.description":
+      "My implementation of some functional programming concepts in TypeScript",
+    "projects.list.promotion-checker.description":
+      "A simple Discord bot which checks Xbox store for promotions",
+    "projects.list.rough-edit.description":
+      "A simple video scraper which makes a rough edit for a video compilation",
+    "projects.list.todo-rs.description":
+      "A CRUD app written in Rust (tide & sqlx) and Svelte",
 
     "meta.testing": "This is for my unit tests",
-    "meta.testing-fallback": "This is only in en, but not in pl",
   },
   pl: {
-    "nav.projects": "projekty",
+    "nav.code-review": "code review",
+    "nav.github": "github",
+    "nav.projects": "projects",
 
     "footer.copy": "Paweł Kołaczyński",
     "footer.why-copy": "nie wiem czemu daję copyright, ale why not :p",
@@ -47,7 +61,20 @@ export const translations: Translations = {
     "home.skillset.6": "Podstawy - Rust, Python, Go, C#",
 
     "projects.title": "Moje Projekty | Paweł Kołaczyński",
-    "projects.header": "Moje Projekty",
+    "projects.h1": "Moje Projekty",
+    "projects.h2.websites": "Stronki",
+    "projects.h2.applications": "Aplikacje i inne",
+
+    "projects.list.typescript-template.description":
+      "Projekt z prekonfigurowanym - Jest, ESlint, Prettier, GitHub Actions i innymi",
+    "projects.list.fpts.description":
+      "Moja implementacja wybranych konceptów programowania funkcyjnego w TypeScript",
+    "projects.list.promotion-checker.description":
+      "Discordowy bot, który codziennie sprawdza promocje na Xbox store",
+    "projects.list.rough-edit.description":
+      "Prosty scraper, który robi wstępny montaż filmu z kompilacją",
+    "projects.list.todo-rs.description":
+      "CRUD napisany w Rust (tide & sqlx) oraz Svelte",
 
     "meta.testing": "This is for my unit tests",
   },

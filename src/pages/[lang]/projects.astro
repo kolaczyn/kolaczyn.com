@@ -7,6 +7,7 @@ import trackFitImg from "../../assets/cards/track-fit.png";
 import typingTestImg from "../../assets/cards/typing-test.png";
 import ProjectCard from "../../components/projects/ProjectCard.astro";
 import { useTranslations } from "../../i18n/useTranslations";
+import ProjectLink from "../../components/projects/ProjectLink.astro";
 export { getLangStaticPaths as getStaticPaths } from "../../i18n/getLangStaticPaths";
 const { t, lang } = useTranslations(Astro);
 ---
@@ -14,8 +15,10 @@ const { t, lang } = useTranslations(Astro);
 <link rel="canonical" href={`https://kolaczyn.com/${lang}/projects/`} />
 <Layout title={t("projects.title")}>
   <main class="max-w-2xl mx-auto p-2 sm:p-4">
-    <h1 class="font-bold text-3xl mb-4">{t("projects.header")}</h1>
-
+    <h1 class="font-bold text-3xl mb-4">{t("projects.h1")}</h1>
+    <h2 class="font-bold text-2xl mb-4 opacity-80">
+      {t("projects.h2.websites")}
+    </h2>
     <div class="grid-cols-1 sm:grid-cols-2 grid gap-8">
       <ProjectCard
         href="https://architektura.kolaczyn.com/"
@@ -42,5 +45,35 @@ const { t, lang } = useTranslations(Astro);
         image={typingTestImg}
       />
     </div>
+    <h2 class="font-bold text-2xl my-4 opacity-80">
+      {t("projects.h2.applications")}
+    </h2>
+    <ul class="list-disc list-inside space-y-1">
+      <ProjectLink
+        link="https://github.com/kolaczyn/typescript-template"
+        name="TypeScript Template"
+        description={t("projects.list.typescript-template.description")}
+      />
+      <ProjectLink
+        link="https://github.com/kolaczyn/fpts"
+        name="fp-ts"
+        description={t("projects.list.typescript-template.description")}
+      />
+      <ProjectLink
+        link="https://github.com/kolaczyn/xbox-promotion-checker"
+        name="Xbox Promotion Checker"
+        description={t("projects.list.promotion-checker.description")}
+      />
+      <ProjectLink
+        link="https://github.com/kolaczyn/rough-edit"
+        name="Rough Edit"
+        description={t("projects.list.rough-edit.description")}
+      />
+      <ProjectLink
+        link="https://github.com/kolaczyn/todo.rs"
+        name="todo-rs"
+        description={t("projects.list.todo-rs.description")}
+      />
+    </ul>
   </main>
 </Layout>
