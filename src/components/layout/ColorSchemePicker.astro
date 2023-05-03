@@ -1,0 +1,58 @@
+---
+import { useTranslations } from "../../i18n/useTranslations";
+const { t } = useTranslations(Astro);
+---
+
+<script>
+  const LOCAL_STORAGE_KEY = "theme";
+  const DARK_THEME_VALUE = "dark";
+
+  const writeAndApplyTheme = (theme: "light" | "dark") => {
+    const writeThemeToStorage = (theme: "light" | "dark") => {
+      localStorage.setItem(LOCAL_STORAGE_KEY, theme);
+    };
+
+    const applyThemeClass = (theme: "light" | "dark") => {
+      const html = document.getElementsByTagName("html")[0];
+      document.documentElement.classList.remove("light", "dark");
+      html.classList.add(theme);
+    };
+
+    writeThemeToStorage(theme);
+    applyThemeClass(theme);
+  };
+
+  const readAndApplyTheme = () => {
+    const theme = localStorage.getItem(LOCAL_STORAGE_KEY);
+    if (theme === DARK_THEME_VALUE) {
+      writeAndApplyTheme("dark");
+    }
+  };
+
+  const addListeners = () => {
+    document.getElementById("light-mode-btn")?.addEventListener("click", () => {
+      writeAndApplyTheme("light");
+    });
+
+    document.getElementById("dark-mode-btn")?.addEventListener("click", () => {
+      writeAndApplyTheme("dark");
+    });
+  };
+
+  const run = () => {
+    addListeners();
+    readAndApplyTheme();
+  };
+
+  run();
+</script>
+
+<span onload="">
+  <button class="hover:opacity-80" id="light-mode-btn"
+    >{t("footer.light-mode")}</button
+  >
+  <span>|</span>
+  <button class="hover:opacity-80" id="dark-mode-btn"
+    >{t("footer.dark-mode")}</button
+  >
+</span>

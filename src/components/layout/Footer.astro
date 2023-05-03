@@ -1,6 +1,8 @@
 ---
 const currentYear = new Date().getFullYear();
 import { useTranslations } from "../../i18n/useTranslations";
+import { isDarkModeEnabled } from "../../utils/flags";
+import ColorSchemePicker from "./ColorSchemePicker.astro";
 import LanguagesLinks from "./LanguagesLinks.astro";
 const { t } = useTranslations(Astro);
 ---
@@ -11,5 +13,6 @@ const { t } = useTranslations(Astro);
 
     <span class="text-gray-700">{t("footer.why-copy")}</span>
     <LanguagesLinks />
+    {isDarkModeEnabled && <ColorSchemePicker />}
   </div>
 </footer>

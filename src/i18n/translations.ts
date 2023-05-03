@@ -8,6 +8,8 @@ export const translations: Translations = {
 
     "footer.copy": "created by Paweł Kołaczyński",
     "footer.why-copy": "dunno what I'm adding a copyright, but why not :p",
+    "footer.light-mode": "light mode",
+    "footer.dark-mode": "dark mode",
 
     "home.h1-big": "Hey, I'm Paweł,",
     "home.h1-small": "and here are a few fun facts about me:",
@@ -46,6 +48,8 @@ export const translations: Translations = {
 
     "footer.copy": "Paweł Kołaczyński",
     "footer.why-copy": "nie wiem czemu daję copyright, ale why not :p",
+    "footer.light-mode": "light mode",
+    "footer.dark-mode": "dark mode",
 
     "home.h1-big": "Hej, jestem Paweł,",
     "home.h1-small": "a oto parę słów o mnie:",

@@ -1,5 +1,9 @@
 type Nav = "nav.github" | "nav.code-review" | "nav.projects";
-type Footer = "footer.copy" | "footer.why-copy";
+type Footer =
+  | "footer.copy"
+  | "footer.why-copy"
+  | "footer.light-mode"
+  | "footer.dark-mode";
 
 type Home = `home.${HomeHeader | HomeFunFacts | HomeSkillset}`;
 
