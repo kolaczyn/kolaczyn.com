@@ -1,14 +1,22 @@
 [
   {
     "path": "/*",
-    "resourceSizes": [
+    "timings": [
       {
-        "resourceType": "document",
-        "budget": 18
+        "metric": "first-contentful-paint",
+        "budget": 500
       },
       {
-        "resourceType": "total",
-        "budget": 200
+        "metric": "interactive",
+        "budget": 1000
+      },
+      {
+        "metric": "cumulative-layout-shift",
+        "budget": 0
+      },
+      {
+        "metric": "speed-index",
+        "budget": 20
       }
     ]
   }
