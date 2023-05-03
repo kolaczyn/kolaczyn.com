@@ -1,0 +1,19 @@
+name: Lighthouse raport
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: |
+            https://kolaczyn.com/pl/
+            https://kolaczyn.com/en/projects
+          budgetPath: '.github/lighthouse/budget.json'
+          uploadArtifacts: true
+          temporaryPublicStorage: true
