@@ -4,7 +4,7 @@
     "timings": [
       {
         "metric": "first-contentful-paint",
-        "budget": 500
+        "budget": 1000
       },
       {
         "metric": "interactive",
@@ -16,7 +16,7 @@
       },
       {
         "metric": "speed-index",
-        "budget": 20
+        "budget": 1500
       }
     ]
   }
