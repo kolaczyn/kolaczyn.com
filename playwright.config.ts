@@ -35,6 +35,7 @@ export default defineConfig({
     timeout: 8_000,
     reuseExistingServer: !process.env.CI,
   },
+  snapshotPathTemplate: "{testDir}/{testFilePath}-snapshots/{arg}-{ext}",
 
   /* Configure projects for major browsers */
   projects: [
