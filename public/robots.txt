@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /playground
 
 Sitemap: https://kolaczyn.com/sitemap.xml
