@@ -22,8 +22,8 @@ const { t, lang } = useTranslations(Astro);
     <div class="grid-cols-1 sm:grid-cols-2 grid gap-8">
       <ProjectCard
         href="https://architektura.kolaczyn.com/"
-        title="Architect's Portfolio"
-        description="Gatsby, Contentful as CMS"
+        title={t('projects.websites.1.title')}
+        description={t('projects.websites.1.description')}
         image={architectureImg}
       />
       <ProjectCard
@@ -35,7 +35,7 @@ const { t, lang } = useTranslations(Astro);
       <ProjectCard
         href="https://fit-tracker.vercel.app/"
         title="Track Fit"
-        description="Next.js, Redux Toolkit, ChakraUI"
+        description="Next.js, Redux Toolkit, Chakra UI"
         image={trackFitImg}
       />
       <ProjectCard
@@ -71,7 +71,7 @@ const { t, lang } = useTranslations(Astro);
       />
       <ProjectLink
         link="https://github.com/kolaczyn/todo.rs"
-        name="todo-rs"
+        name="todo.rs"
         description={t("projects.list.todo-rs.description")}
       />
     </ul>

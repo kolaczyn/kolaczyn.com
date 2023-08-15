@@ -16,7 +16,7 @@ type HomeFunFacts = `fun-facts.${
   | "3"
   | "4"
   | "5.outside-brackets"
-  | "5.inside-brackest"}`;
+  | "5.inside-brackets"}`;
 
 type HomeSkillset = "skillset.title" | "skillset.6";
 
@@ -24,6 +24,7 @@ type Projects = `projects.${
   | "title"
   | "h1"
   | "h2.websites"
+  | `websites.${1}.${"title" | "description"}`
   | "h2.applications"
   | "list.typescript-template.description"
   | "list.rough-edit.description"

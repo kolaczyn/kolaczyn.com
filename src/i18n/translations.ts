@@ -19,13 +19,16 @@ export const translations: Translations = {
     "home.fun-facts.3": "I love learning about new frontend technologies",
     "home.fun-facts.4": "Vim user",
     "home.fun-facts.5.outside-brackets": "Functional programming enjoyer",
-    "home.fun-facts.5.inside-brackest": "proof",
+    "home.fun-facts.5.inside-brackets": "proof",
     "home.skillset.title": "My skillset",
     "home.skillset.6": "Basics: Rust, Python, Go, Swift, C#",
 
     "projects.title": "My Projects | Paweł Kołaczyński",
     "projects.h1": "My Projects",
     "projects.h2.websites": "Websites",
+    "projects.websites.1.title": "Architect's portfolio",
+    "projects.websites.1.description": "Gatsby, Contentful as CMS",
+
     "projects.h2.applications": "Applications & others",
 
     "projects.list.typescript-template.description":
@@ -60,12 +63,14 @@ export const translations: Translations = {
     "home.fun-facts.3": "Uwielbiam poznawać nowe technologie frontendowe",
     "home.fun-facts.4": "Vim-uję",
     "home.fun-facts.5.outside-brackets": "Kocham programowanie funkcyjne",
-    "home.fun-facts.5.inside-brackest": "dowód",
+    "home.fun-facts.5.inside-brackets": "dowód",
     "home.skillset.title": "Mój skillset",
     "home.skillset.6": "Podstawy - Rust, Python, Go, C#",
 
     "projects.title": "Moje Projekty | Paweł Kołaczyński",
     "projects.h1": "Moje Projekty",
+    "projects.websites.1.title": "Portfolio Architekta",
+    "projects.websites.1.description": "Gatsby, Contentful jako CMS",
     "projects.h2.websites": "Stronki",
     "projects.h2.applications": "Aplikacje i inne",
 
