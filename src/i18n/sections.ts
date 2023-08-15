@@ -26,6 +26,7 @@ type Projects = `projects.${
   | "h2.websites"
   | `websites.${1}.${"title" | "description"}`
   | "h2.applications"
+  | "list.boards.description"
   | "list.typescript-template.description"
   | "list.rough-edit.description"
   | "list.promotion-checker.description"

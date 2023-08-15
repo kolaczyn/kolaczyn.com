@@ -50,6 +50,11 @@ const { t, lang } = useTranslations(Astro);
     </h2>
     <ul class="list-disc list-inside space-y-1">
       <ProjectLink
+          link="https://boards.kolaczyn.com"
+          name="Boards"
+          description={t("projects.list.boards.description")}
+      />
+      <ProjectLink
         link="https://github.com/kolaczyn/typescript-template"
         name="TypeScript Template"
         description={t("projects.list.typescript-template.description")}

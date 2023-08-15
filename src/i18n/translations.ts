@@ -31,6 +31,8 @@ export const translations: Translations = {
 
     "projects.h2.applications": "Applications & others",
 
+    "projects.list.boards.description":
+      "Fullstack 4chan clone: Remix, Android, .NET, PostgreSQL",
     "projects.list.typescript-template.description":
       "Starter with Jest, ESlint, Prettier, GitHub Actions (and more) preconfigured",
     "projects.list.fpts.description":
@@ -74,6 +76,8 @@ export const translations: Translations = {
     "projects.h2.websites": "Stronki",
     "projects.h2.applications": "Aplikacje i inne",
 
+    "projects.list.boards.description":
+      "Fullstackowy klon 4chana: Remix, Android, .NET, PostgreSQL",
     "projects.list.typescript-template.description":
       "Projekt z prekonfigurowanym - Jest, ESlint, Prettier, GitHub Actions i innymi",
     "projects.list.fpts.description":
