@@ -4,7 +4,7 @@ on:
   - pull_request
 
 jobs:
-  continouse-integration:
+  continous-integration:
     runs-on: ubuntu-latest
 
     steps:
